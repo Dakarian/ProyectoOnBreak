@@ -1,0 +1,14 @@
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\BibliotecaClases\obj\Debug\BibliotecaClases.csprojResolveAssemblyReference.cache
+D:\On break g6\BibliotecaClases\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+D:\On break g6\BibliotecaClases\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+D:\On break g6\BibliotecaClases\BibliotecaClases\obj\Debug\BibliotecaClases.csprojResolveAssemblyReference.cache
+D:\On break g6\BibliotecaClases\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+D:\On break g6\BibliotecaClases\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+D:\On break g6\On Break\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+D:\On break g6\On Break\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+D:\On break g6\On Break\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+D:\On break g6\On Break\BibliotecaClases\obj\Debug\BibliotecaClases.pdb

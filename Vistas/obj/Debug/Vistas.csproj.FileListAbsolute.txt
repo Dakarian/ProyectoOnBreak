@@ -1,0 +1,25 @@
+D:\On break g6\On Break\Vistas\bin\Debug\Vistas.exe.config
+D:\On break g6\On Break\Vistas\bin\Debug\Vistas.exe
+D:\On break g6\On Break\Vistas\bin\Debug\Vistas.pdb
+D:\On break g6\On Break\Vistas\obj\Debug\App.g.cs
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas_MarkupCompile.cache
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas_MarkupCompile.lref
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas.g.resources
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas.csproj.GenerateResource.Cache
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas.exe
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas.pdb
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas\ListarContrato.g.cs
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas\ListarCliente.g.cs
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas\AdministrarContrato.g.cs
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas\AdministrarCliente.g.cs
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas\ListarContrato.baml
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas\ListarCliente.baml
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas\AdministrarContrato.baml
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas\AdministrarCliente.baml
+D:\On break g6\On Break\Vistas\obj\Debug\Vistas.csprojResolveAssemblyReference.cache
+D:\On break g6\On Break\Vistas\obj\Debug\MainWindow.g.cs
+D:\On break g6\On Break\Vistas\obj\Debug\MainWindow.baml
+C:\Users\Duoc\Desktop\On_break_g6\On_Break\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\Duoc\Desktop\On_break_g6\On_Break\Vistas\obj\Debug\Vistas.exe
+C:\Users\Duoc\Desktop\On_break_g6\On_Break\Vistas\obj\Debug\Vistas.pdb

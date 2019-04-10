@@ -1,0 +1,14 @@
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\Controlador\bin\Debug\Controlador.dll
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\Controlador\bin\Debug\Controlador.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\Controlador\obj\Debug\Controlador.dll
+c:\users\duoc\documents\visual studio 2015\Projects\BibliotecaClases\Controlador\obj\Debug\Controlador.pdb
+D:\On break g6\BibliotecaClases\Controlador\bin\Debug\Controlador.dll
+D:\On break g6\BibliotecaClases\Controlador\bin\Debug\Controlador.pdb
+D:\On break g6\BibliotecaClases\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
+D:\On break g6\BibliotecaClases\Controlador\obj\Debug\Controlador.dll
+D:\On break g6\BibliotecaClases\Controlador\obj\Debug\Controlador.pdb
+D:\On break g6\On Break\Controlador\bin\Debug\Controlador.dll
+D:\On break g6\On Break\Controlador\bin\Debug\Controlador.pdb
+D:\On break g6\On Break\Controlador\obj\Debug\Controlador.dll
+D:\On break g6\On Break\Controlador\obj\Debug\Controlador.pdb
