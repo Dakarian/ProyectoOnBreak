@@ -5,11 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
-        Title="AdministrarCliente" Height="300" Width="300">
-    <Grid>
-        <Button x:Name="btn_volver" HorizontalAlignment="Left" Height="43" Margin="195,168,0,0" VerticalAlignment="Top" Width="61" Click="btn_volver_Click">
-            <Image x:Name="image" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="33" Source="D:\On break g6\On Break\Vistas\Iconos\Check.png"/>
+        Title="AdministrarCliente" Height="400.288" Width="537.192" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_volver" HorizontalAlignment="Left" Height="43" Margin="452,314,0,0" VerticalAlignment="Top" Width="61" Click="btn_volver_Click" Grid.Column="0">
+            <Label x:Name="label6" Content="Volver"/>
         </Button>
+        <GroupBox x:Name="groupBox" Header="Datos Personales" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Height="347" Width="270">
+            <Grid HorizontalAlignment="Left" Height="311" Margin="4,10,0,0" VerticalAlignment="Top" Width="250">
+                <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="23" Margin="110,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="label2" Content="Rut" HorizontalAlignment="Left" Margin="37,27,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label3" Content="Nombre" HorizontalAlignment="Left" Margin="11,63,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label4" Content="Email" HorizontalAlignment="Left" Margin="27,98,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label5" Content="Telefono" HorizontalAlignment="Left" Margin="11,136,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label" Content="Actividad" HorizontalAlignment="Left" Margin="6,178,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txt_nom" HorizontalAlignment="Left" Height="23" Margin="110,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txt_email" HorizontalAlignment="Left" Height="23" Margin="110,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txt_telefono" HorizontalAlignment="Left" Height="23" Margin="110,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <ComboBox x:Name="cbo_actividad" HorizontalAlignment="Left" Margin="110,182,0,0" VerticalAlignment="Top" Width="120"/>
+                <ComboBox x:Name="cbo_empresa" HorizontalAlignment="Left" Margin="110,221,0,0" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="label1" Content="Empresa" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="btn_grabarcli" Content="Guardar" HorizontalAlignment="Left" Margin="155,267,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="btn_grabarcli_Click"/>
+            </Grid>
+        </GroupBox>
 
     </Grid>
 </Window>

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BibliotecaClases;
 
 namespace Vistas
 {
@@ -22,6 +23,10 @@ namespace Vistas
         public AdministrarCliente()
         {
             InitializeComponent();
+            cbo_actividad.ItemsSource = Enum.GetValues(typeof(Actividad));
+            cbo_actividad.SelectedIndex = 0;
+            cbo_empresa.ItemsSource = Enum.GetValues(typeof(Empresa));
+            cbo_empresa.SelectedIndex = 0;
         }
 
         private void btn_volver_Click(object sender, RoutedEventArgs e)
@@ -35,5 +40,9 @@ namespace Vistas
 
         }
 
+        private void btn_grabarcli_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="btn_clientes" Content="Button" HorizontalAlignment="Left" Margin="222,75,0,0" VerticalAlignment="Top" Width="75" Click="btn_clientes_Click"/>
+        <Button x:Name="btn_clientes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="220" Click="btn_clientes_Click" Height="140"/>
+        <Button x:Name="btn_contratos" HorizontalAlignment="Left" Margin="290,10,0,0" VerticalAlignment="Top" Width="204" Height="140" Click="btn_contratos_Click"/>
+        <Button x:Name="btn_listarcli" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Width="220" Height="127" Click="btn_listarcli_Click"/>
+        <Button x:Name="btn_listarcon" HorizontalAlignment="Left" Margin="290,182,0,0" VerticalAlignment="Top" Width="204" Height="127" Click="btn_listarcon_Click"/>
 
     </Grid>
 </Window>

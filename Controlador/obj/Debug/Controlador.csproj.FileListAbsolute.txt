@@ -12,3 +12,8 @@ D:\On break g6\On Break\Controlador\bin\Debug\Controlador.dll
 D:\On break g6\On Break\Controlador\bin\Debug\Controlador.pdb
 D:\On break g6\On Break\Controlador\obj\Debug\Controlador.dll
 D:\On break g6\On Break\Controlador\obj\Debug\Controlador.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\bin\Debug\Controlador.dll
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\bin\Debug\Controlador.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\obj\Debug\Controlador.dll
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\obj\Debug\Controlador.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache

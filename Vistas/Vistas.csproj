@@ -124,25 +124,73 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BibliotecaClases\BibliotecaClases.csproj">
+      <Project>{35a17cc3-c296-42fb-b217-c7f752533531}</Project>
+      <Name>BibliotecaClases</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controlador\Controlador.csproj">
+      <Project>{e5c368f3-02b3-4cc5-961f-257366e54fd3}</Project>
+      <Name>Controlador</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Align-Justify.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Arrowhead-Left-01.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Arrowhead-Right-01.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Data-Files.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Data-Synchronize.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Document-Add-01.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Document-Check.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Document-Delete-02.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Document-Exchange-01.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Document-Find.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Employee.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Garbage-Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\Paid-Invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\User-Add.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\User-Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\User-Login.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\User-Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Iconos\User-Profile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

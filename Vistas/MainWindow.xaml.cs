@@ -32,5 +32,26 @@ namespace Vistas
             this.Hide();
             ac.Show();
         }
+
+        private void btn_contratos_Click(object sender, RoutedEventArgs e)
+        {
+            AdministrarContrato ac = new AdministrarContrato();
+            this.Hide();
+            ac.Show();
+        }
+
+        private void btn_listarcli_Click(object sender, RoutedEventArgs e)
+        {
+            ListarCliente lc = new ListarCliente();
+            this.Hide();
+            lc.Show();
+        }
+
+        private void btn_listarcon_Click(object sender, RoutedEventArgs e)
+        {
+            ListarContrato lc = new ListarContrato();
+            this.Hide();
+            lc.Show();
+        }
     }
 }

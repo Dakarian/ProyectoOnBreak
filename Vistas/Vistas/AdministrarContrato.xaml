@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
-        Title="AdministrarContrato" Height="300" Width="300">
+        Title="AdministrarContrato" Height="454.394" Width="527.197" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <GroupBox x:Name="groupBox" Header="Datos Contrato" HorizontalAlignment="Left" Height="387" Margin="10,10,0,0" VerticalAlignment="Top" Width="297">
+            <Grid Margin="4,7,4,4">
+                <Label x:Name="label" Content="Numero Contrato" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txt_numcontrato" HorizontalAlignment="Left" Height="23" Margin="119,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.347,1.434" IsEnabled="False"/>
+                <Label x:Name="label1" Content="Fecha Creacion" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label2" Content="Fecha Termino" HorizontalAlignment="Left" Margin="28,110,0,0" VerticalAlignment="Top"/>
+                <DatePicker x:Name="dp_creacion" HorizontalAlignment="Left" Margin="119,69,0,0" VerticalAlignment="Top" IsEnabled="False" Width="134"/>
+                <TextBox x:Name="txt_termino" HorizontalAlignment="Left" Height="23" Margin="119,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="411,377,0,0" VerticalAlignment="Top" Width="98" Height="36" Click="btn_volver_Click"/>
+
     </Grid>
 </Window>

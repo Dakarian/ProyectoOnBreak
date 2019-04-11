@@ -22,6 +22,22 @@ namespace Vistas
         public AdministrarContrato()
         {
             InitializeComponent();
+            String ncontrato = DateTime.Now.ToString("yyyyMMddHHmm");
+            txt_numcontrato.Text = ncontrato;
+
+            dp_creacion.SelectedDate = DateTime.Today;
+
+            
+            DateTime termino = DateTime.Today.AddMonths(1);
+            string formato = termino.ToString("dd/MM/yyyy");
+            txt_termino.Text = formato;
+        }
+
+        private void btn_volver_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            this.Close();
+            mw.Show();
         }
     }
 }

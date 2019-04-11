@@ -23,3 +23,29 @@ D:\On break g6\On Break\Vistas\obj\Debug\MainWindow.baml
 C:\Users\Duoc\Desktop\On_break_g6\On_Break\Vistas\bin\Debug\Vistas.exe.config
 C:\Users\Duoc\Desktop\On_break_g6\On_Break\Vistas\obj\Debug\Vistas.exe
 C:\Users\Duoc\Desktop\On_break_g6\On_Break\Vistas\obj\Debug\Vistas.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\Vistas.exe.config
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\Vistas.exe
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\Vistas.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\BibliotecaClases.dll
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\Controlador.dll
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\BibliotecaClases.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\Controlador.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csprojResolveAssemblyReference.cache
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas\ListarContrato.g.cs
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas\ListarCliente.g.cs
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas\AdministrarContrato.g.cs
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas\AdministrarCliente.g.cs
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\MainWindow.g.cs
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\App.g.cs
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas_MarkupCompile.cache
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas_MarkupCompile.lref
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas\ListarContrato.baml
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas\ListarCliente.baml
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas\AdministrarContrato.baml
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas\AdministrarCliente.baml
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\MainWindow.baml
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.g.resources
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csproj.GenerateResource.Cache
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.exe
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.pdb
