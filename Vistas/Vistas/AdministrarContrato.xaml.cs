@@ -22,8 +22,8 @@ namespace Vistas
         public AdministrarContrato()
         {
             InitializeComponent();
-            String ncontrato = DateTime.Now.ToString("yyyyMMddHHmm");
-            txt_numcontrato.Text = ncontrato;
+            String numcontrato = DateTime.Now.ToString("yyyyMMddHHmm");
+            txt_numcontrato.Text = numcontrato;
 
             dp_creacion.SelectedDate = DateTime.Today;
 
@@ -31,6 +31,15 @@ namespace Vistas
             DateTime termino = DateTime.Today.AddMonths(1);
             string formato = termino.ToString("dd/MM/yyyy");
             txt_termino.Text = formato;
+
+            DateTime horaini = DateTime.Now;
+            string fhoraini = horaini.ToString("HH:mm");
+            txt_hrini.Text = fhoraini;
+
+            DateTime horafin = DateTime.Now.AddMonths(1);
+            string fhorafin = horafin.ToString("HH:mm");
+            txt_hrfin.Text = fhorafin;
+
         }
 
         private void btn_volver_Click(object sender, RoutedEventArgs e)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BibliotecaClases
 {
-    class Contrato
+    public class Contrato
     {
         private int NumeroContrato;
 
@@ -64,20 +64,50 @@ namespace BibliotecaClases
             set { EstaVigente = value; }
         }
 
-        private String Tipo;
-
-        public String _Tipo
-        {
-            get { return Tipo; }
-            set { Tipo = value; }
-        }
-
         private String Observaciones;
 
         public String _Observaciones
         {
             get { return Observaciones; }
             set { Observaciones = value; }
+        }
+
+
+
+    }
+
+    public class Tipo {
+
+        private int Id;
+
+        public int _Id
+        {
+            get { return Id; }
+            set { Id = value; }
+        }
+
+        private String Nombre;
+
+        public String _Nombre
+        {
+            get { return Nombre; }
+            set { Nombre = value; }
+        }
+
+        private int ValorBase;
+
+        public int _ValorBase
+        {
+            get { return ValorBase; }
+            set { ValorBase = value; }
+        }
+
+        private int PersonalBase;
+
+        public int _PersonalBase
+        {
+            get { return PersonalBase; }
+            set { PersonalBase = value; }
         }
 
 
