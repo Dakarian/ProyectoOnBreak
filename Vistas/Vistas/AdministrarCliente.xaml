@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
-        Title="AdministrarCliente" Height="400.288" Width="537.192" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="AdministrarCliente" Height="411.288" Width="550.192" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,7">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

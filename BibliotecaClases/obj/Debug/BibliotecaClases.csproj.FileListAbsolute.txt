@@ -16,4 +16,3 @@ H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\D
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
-H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csprojResolveAssemblyReference.cache
