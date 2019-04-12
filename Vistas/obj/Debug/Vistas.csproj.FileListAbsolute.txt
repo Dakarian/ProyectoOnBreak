@@ -49,3 +49,12 @@ H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\D
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csproj.GenerateResource.Cache
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.exe
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Vistas.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\ControlzEx.dll
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\MahApps.Metro.dll
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\System.Windows.Interactivity.dll
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\ControlzEx.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\MahApps.Metro.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\bin\Debug\MahApps.Metro.xml
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Resources\Icons.baml
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Resources\IconsNonShared.baml
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\App.baml
