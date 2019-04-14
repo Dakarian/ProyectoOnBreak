@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="ColeccionCliente.cs" />
     <Compile Include="Contrato.cs" />
     <Compile Include="Enumerador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
