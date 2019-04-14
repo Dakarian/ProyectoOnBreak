@@ -16,3 +16,10 @@ H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\D
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csprojAssemblyReference.cache
+C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csproj.CoreCompileInputs.cache
+C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csprojResolveAssemblyReference.cache

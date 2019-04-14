@@ -19,16 +19,15 @@ namespace BibliotecaClases
 
             set {
 
-                if (value.Length<= 9 & value.Length>=10)
+                if (value.Length <= 10)
                 {
                     Rut = value;
                 }
-                    else
-                    {
+                else
+                {
                     throw new ArgumentException("Rut invalido");
-                    }
-
                 }
+            }
         }
 
         private String RazonSocial;
@@ -71,23 +70,20 @@ namespace BibliotecaClases
             set { Telefono = value; }
         }
 
-        private String Actividad;
+        private Actividad _actividad;
 
-        public String _Actividad
+        public Actividad _Actividad
         {
-            get { return Actividad; }
-            set { Actividad = value; }
+            get { return _actividad; }
+            set { _actividad = value; }
         }
 
-        private String Tipo;
+        private Empresa _tipo;
 
-        public String _Tipo
+        public Empresa _Tipo
         {
-            get { return Tipo; }
-            set { Tipo = value; }
+            get { return _tipo; }
+            set { _tipo = value; }
         }
-
-
-
     }
 }
