@@ -17,3 +17,5 @@ H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\D
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\obj\Debug\Controlador.dll
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\obj\Debug\Controlador.pdb
 H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\bin\Debug\BibliotecaClases.dll
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Controlador\bin\Debug\BibliotecaClases.pdb

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BibliotecaClases;
 
-namespace BibliotecaClases
+namespace Controlador
 {
     public class ColeccionCliente
     {
+
         private List<Cliente> clientes = new List<Cliente>();
 
         //Coleccion de clientes
@@ -23,7 +25,7 @@ namespace BibliotecaClases
 
             foreach (var buscar in clientes)
             {
-                if (buscar._Rut==rut)
+                if (buscar._Rut == rut)
                 {
                     return buscar;
                 }

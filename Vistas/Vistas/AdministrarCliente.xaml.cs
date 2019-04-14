@@ -15,6 +15,7 @@ using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
 using BibliotecaClases;
+using Controlador;
 
 namespace Vistas
 {
