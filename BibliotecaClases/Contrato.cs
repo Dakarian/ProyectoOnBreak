@@ -32,9 +32,9 @@ namespace BibliotecaClases
             set { Termino = value; }
         }
 
-        private DateTime FechaHoraInicio;
+        private String FechaHoraInicio;
 
-        public DateTime _FechaHoraInicio
+        public String _FechaHoraInicio
         {
             get { return FechaHoraInicio; }
             set { FechaHoraInicio = value; }

@@ -221,6 +221,16 @@
   <ItemGroup>
     <Resource Include="Resources\Entypo-license.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\dark_logo_transparent_background.png" />
+    <Resource Include="Iconos\dark_logo_white_background.jpg" />
+    <Resource Include="Iconos\Logo Duoc UC Escuela IT.jpg" />
+    <Resource Include="Iconos\logo_transparent_background.png" />
+    <Resource Include="Iconos\logo_white_background.jpg" />
+    <Resource Include="Iconos\white_logo_color_background.jpg" />
+    <Resource Include="Iconos\white_logo_dark_background.jpg" />
+    <Resource Include="Iconos\white_logo_transparent_background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
