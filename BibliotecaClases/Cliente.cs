@@ -17,8 +17,10 @@ namespace BibliotecaClases
                 return Rut;
             }
 
-            set {
-
+            set
+            {
+                Rut = value;
+                /*
                 if (value.Length <= 10)
                 {
                     Rut = value;
@@ -27,15 +29,8 @@ namespace BibliotecaClases
                 {
                     throw new ArgumentException("Rut invalido");
                 }
-            }
-        }
-
-        private String RazonSocial;
-
-        public String _RazonSocial
-        {
-            get { return RazonSocial; }
-            set { RazonSocial = value; }
+                */
+            }   
         }
 
         private String NombreContacto;
@@ -44,6 +39,14 @@ namespace BibliotecaClases
         {
             get { return NombreContacto; }
             set { NombreContacto = value; }
+        }
+
+        private String RazonSocial;
+
+        public String _RazonSocial
+        {
+            get { return RazonSocial; }
+            set { RazonSocial = value; }
         }
 
         private String MailContacto;

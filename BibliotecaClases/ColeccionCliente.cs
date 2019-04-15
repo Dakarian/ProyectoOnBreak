@@ -39,7 +39,7 @@ namespace BibliotecaClases
 
             if (nuevoCliente == null)
             {
-                this.clientes.Add(nuevoCliente);
+                this.Clientes.Add(cli);
                 return true;
             }
 
