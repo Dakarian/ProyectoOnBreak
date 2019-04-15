@@ -1,7 +1,13 @@
-﻿<Window x:Class="Vistas.AdministrarContrato"
+﻿<Controls:MetroWindow x:Class="Vistas.AdministrarContrato"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                  
+        
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
@@ -12,22 +18,18 @@
                 <Label x:Name="label" Content="Numero Contrato" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="txt_numcontrato" HorizontalAlignment="Left" Height="23" Margin="119,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.347,1.434" IsEnabled="False"/>
                 <Label x:Name="label1" Content="Fecha Creacion" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label2" Content="Fecha Termino" HorizontalAlignment="Left" Margin="28,110,0,0" VerticalAlignment="Top"/>
                 <DatePicker x:Name="dp_creacion" HorizontalAlignment="Left" Margin="119,69,0,0" VerticalAlignment="Top" IsEnabled="False" Width="167"/>
-                <TextBox x:Name="txt_termino" HorizontalAlignment="Left" Height="23" Margin="119,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
-                <Label x:Name="label3" Content="Hora Inicio" HorizontalAlignment="Left" Margin="47,152,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label4" Content="Hora Fin" HorizontalAlignment="Left" Margin="59,193,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_hrini" HorizontalAlignment="Left" Height="23" Margin="119,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
-                <TextBox x:Name="txt_hrfin" HorizontalAlignment="Left" Height="23" Margin="119,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
-                <Label x:Name="label5" Content="Direccion" HorizontalAlignment="Left" Margin="54,235,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="119,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
-                <CheckBox x:Name="ckbox_vigente" Content="Vigente" HorizontalAlignment="Left" Margin="119,279,0,0" VerticalAlignment="Top" Width="134" IsChecked="True" IsEnabled="False"/>
-                <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="119" Margin="120,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
-                <Label x:Name="label6" Content="Observaciones" HorizontalAlignment="Left" Margin="27,328,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label3" Content="Hora Inicio" HorizontalAlignment="Left" Margin="47,115,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txt_hrini" HorizontalAlignment="Left" Height="23" Margin="120,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" IsEnabled="False"/>
+                <Label x:Name="label5" Content="Direccion" HorizontalAlignment="Left" Margin="54,161,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txt_direccion" HorizontalAlignment="Left" Height="23" Margin="120,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                <CheckBox x:Name="ckbox_vigente" Content="Vigente" HorizontalAlignment="Left" Margin="120,219,0,0" VerticalAlignment="Top" Width="134" IsChecked="True" IsEnabled="False"/>
+                <TextBox x:Name="txt_obs" HorizontalAlignment="Left" Height="119" Margin="121,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+                <Label x:Name="label6" Content="Observaciones" HorizontalAlignment="Left" Margin="27,258,0,0" VerticalAlignment="Top"/>
             </Grid>
         </GroupBox>
         <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="497,453,0,0" VerticalAlignment="Top" Width="98" Height="36" Click="btn_volver_Click"/>
-        <Button x:Name="btn_grabar" Content="Guardar" HorizontalAlignment="Left" Margin="472,54,0,0" VerticalAlignment="Top" Width="104" Height="52"/>
+        <Button x:Name="btn_grabar" Content="Guardar" HorizontalAlignment="Left" Margin="472,54,0,0" VerticalAlignment="Top" Width="104" Height="52" Click="btn_grabar_Click"/>
 
     </Grid>
-</Window>
+</Controls:MetroWindow>
