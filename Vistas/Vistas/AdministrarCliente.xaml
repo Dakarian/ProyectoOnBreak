@@ -10,30 +10,42 @@
         xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
                       
-        Title="AdministrarCliente" Height="467.373" Width="550.192" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="AdministrarCliente" Height="509.862" Width="775.381" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,7">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btn_volver" HorizontalAlignment="Left" Height="43" Margin="452,314,0,0" VerticalAlignment="Top" Width="61" Click="btn_volver_Click" Grid.Column="0"/>
-        <GroupBox x:Name="groupBox" Header="Datos Personales" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Height="403" Width="340">
-            <Grid HorizontalAlignment="Left" Height="311" Margin="4,10,0,-9" VerticalAlignment="Top" Width="326">
+        <GroupBox x:Name="groupBox" Header="Datos Personales" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Height="446" Width="313">
+            <Grid HorizontalAlignment="Left" Height="383" Margin="4,10,0,-25" VerticalAlignment="Top" Width="733">
                 <TextBox x:Name="txt_rut" Controls:TextBoxHelper.Watermark="Ingrese Rut" Controls:TextBoxHelper.IsSpellCheckContextMenuEnabled="True" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txt_rut_TextChanged" MaxLength="12"/>
                 <Label x:Name="label2" Content="Rut" HorizontalAlignment="Left" Margin="37,27,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label3" Content="Nombre" HorizontalAlignment="Left" Margin="11,63,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label4" Content="Email" HorizontalAlignment="Left" Margin="27,98,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label5" Content="Telefono" HorizontalAlignment="Left" Margin="11,136,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label" Content="Actividad" HorizontalAlignment="Left" Margin="6,178,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label4" Content="Email" HorizontalAlignment="Left" Margin="28,137,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label5" Content="Telefono" HorizontalAlignment="Left" Margin="11,214,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label" Content="Actividad" HorizontalAlignment="Left" Margin="40,273,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="txt_nom" Controls:TextBoxHelper.Watermark="Ingrese Nombre" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" MaxLength="30"/>
-                <TextBox x:Name="txt_email" Controls:TextBoxHelper.Watermark="ejemplo@alumnos.duoc.cl" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" MaxLength="30"/>
-                <TextBox x:Name="txt_telefono" Controls:TextBoxHelper.Watermark="9 12345678" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MaxLength="9" KeyDown="Txt_telefono_KeyDown"/>
-                <ComboBox x:Name="cbo_actividad" HorizontalAlignment="Left" Margin="110,182,0,0" VerticalAlignment="Top" Width="120"/>
-                <ComboBox x:Name="cbo_empresa" HorizontalAlignment="Left" Margin="110,221,0,0" VerticalAlignment="Top" Width="120"/>
-                <Label x:Name="label1" Content="Empresa" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top"/>
-                <Button x:Name="btn_grabarcli" Content="Guardar" HorizontalAlignment="Left" Margin="241,312,0,-30" VerticalAlignment="Top" Width="75" Height="29" Click="btn_grabarcli_Click"/>
-                <Button Content="Button" HorizontalAlignment="Left" Margin="135,312,0,-30" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+                <TextBox x:Name="txt_razon" Controls:TextBoxHelper.Watermark="Ingrese Razon Social" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" MaxLength="20"/>
+                <TextBox x:Name="txt_email" Controls:TextBoxHelper.Watermark="ejemplo@alumnos.duoc.cl" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" MaxLength="30"/>
+                <TextBox x:Name="txt_direccion" Controls:TextBoxHelper.Watermark="Ingrese Direccion" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" MaxLength="30"/>
+                <TextBox x:Name="txt_telefono" Controls:TextBoxHelper.Watermark="9 12345678" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MaxLength="9" KeyDown="Txt_telefono_KeyDown"/>
+                <ComboBox x:Name="cbo_actividad" HorizontalAlignment="Left" Margin="13,299,0,0" VerticalAlignment="Top" Width="120"/>
+                <ComboBox x:Name="cbo_empresa" HorizontalAlignment="Left" Margin="178,299,0,0" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="label1" Content="Empresa" HorizontalAlignment="Left" Margin="212,273,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="btn_grabarcli" Content="Guardar" HorizontalAlignment="Left" Margin="28,344,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="btn_grabarcli_Click"/>
+                <Button x:Name="btn_limpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="212,344,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Limpiar_Click"/>
+                <Label x:Name="label3_Copy" Content="Razón Social" HorizontalAlignment="Left" Margin="11,102,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label4_Copy" Content="Dirección" HorizontalAlignment="Left" Margin="27,168,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="btn_buscar" Content="" HorizontalAlignment="Left" Margin="240,24,0,0" VerticalAlignment="Top" Width="47" Height="29" Click="Button_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Vistas;component/Iconos/Help.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
             </Grid>
         </GroupBox>
+        <GroupBox Header="Datos Guardados" HorizontalAlignment="Left" Height="446" Margin="342,18,0,0" VerticalAlignment="Top" Width="415">
+            <DataGrid x:Name="dgridCliente" HorizontalAlignment="Left" Height="226" Margin="10,0,0,0" VerticalAlignment="Top" Width="366"/>
+        </GroupBox>
+        <Button x:Name="btn_volver" HorizontalAlignment="Left" Height="29" Margin="674,418,0,0" VerticalAlignment="Top" Width="69" Click="btn_volver_Click" Grid.Column="0" Content="Volver"/>
 
     </Grid>
 </Controls:MetroWindow>
