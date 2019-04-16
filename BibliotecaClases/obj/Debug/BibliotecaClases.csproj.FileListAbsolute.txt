@@ -22,7 +22,6 @@ C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\obj\Debug\Bibl
 C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csproj.CoreCompileInputs.cache
 C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
 C:\Users\Jeremiflin\Source\Repos\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
-H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csprojResolveAssemblyReference.cache
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.dll
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll

@@ -11,10 +11,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
-        Title="AdministrarContrato" Height="539.394" Width="624.197" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="AdministrarContrato" Height="539.394" Width="1066.697" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <GroupBox x:Name="groupBox" Header="Datos Contrato" HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="334">
-            <Grid Margin="4,7,4,4">
+        <GroupBox x:Name="groupBox" Header="Datos Contrato" HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="596">
+            <Grid Margin="0,0,8,1">
                 <Label x:Name="label" Content="Numero Contrato" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="txt_numcontrato" HorizontalAlignment="Left" Height="23" Margin="119,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.347,1.434" IsEnabled="False"/>
                 <Label x:Name="label1" Content="Fecha Creacion" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top"/>
@@ -26,10 +26,18 @@
                 <CheckBox x:Name="ckbox_vigente" Content="Vigente" HorizontalAlignment="Left" Margin="120,219,0,0" VerticalAlignment="Top" Width="134" IsChecked="True" IsEnabled="False"/>
                 <TextBox x:Name="txt_obs" HorizontalAlignment="Left" Height="119" Margin="121,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
                 <Label x:Name="label6" Content="Observaciones" HorizontalAlignment="Left" Margin="27,258,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cbo_evento" HorizontalAlignment="Left" Margin="454,25,0,0" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="label2" Content="ID Evento" HorizontalAlignment="Left" Margin="388,25,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="btn_grabar" Content="Guardar" HorizontalAlignment="Left" Margin="464,392,0,0" VerticalAlignment="Top" Width="104" Height="52" Click="btn_grabar_Click"/>
+                <Label x:Name="label4" Content="Rut Cliente" HorizontalAlignment="Left" Margin="381,69,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="454,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Button x:Name="button" Content="Buscar" HorizontalAlignment="Left" Margin="479,112,0,0" VerticalAlignment="Top" Width="75"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="497,453,0,0" VerticalAlignment="Top" Width="98" Height="36" Click="btn_volver_Click"/>
-        <Button x:Name="btn_grabar" Content="Guardar" HorizontalAlignment="Left" Margin="472,54,0,0" VerticalAlignment="Top" Width="104" Height="52" Click="btn_grabar_Click"/>
+        <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="938,453,0,0" VerticalAlignment="Top" Width="98" Height="36" Click="btn_volver_Click"/>
+        <GroupBox x:Name="groupBox1" Header="Datos" HorizontalAlignment="Left" Height="396" Margin="662,10,0,0" VerticalAlignment="Top" Width="389">
+            <DataGrid x:Name="dg_contrato" HorizontalAlignment="Left" Height="343" Margin="0,10,0,0" VerticalAlignment="Top" Width="379"/>
+        </GroupBox>
 
     </Grid>
 </Controls:MetroWindow>
