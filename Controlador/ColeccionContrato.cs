@@ -46,10 +46,8 @@ namespace Controlador
                 this.contrato.Add(nvContrato);
                 return true;
             }
-            else
-            {
                 return false;
-            }
+            
 
         }
 

@@ -71,6 +71,10 @@ namespace BibliotecaClases
             get { return Observaciones; }
             set { Observaciones = value; }
         }
+        public Contrato()
+        {
+
+        }
 
 
 
@@ -109,7 +113,10 @@ namespace BibliotecaClases
             get { return PersonalBase; }
             set { PersonalBase = value; }
         }
+        public Tipo()
+        {
 
+        }
 
 
     }
