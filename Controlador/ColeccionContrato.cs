@@ -38,21 +38,32 @@ namespace Controlador
 
         public bool agregarContrato(Contrato con)
         {
+            
 
-            Contrato nvContrato = buscarContrato(con._NumeroContrato);
-
-            if (nvContrato == null)
+            if (existeContrato(con._NumeroContrato)==false)
             {
-                this.contrato.Add(nvContrato);
+                this.contrato.Add(con);
                 return true;
             }
-            else
-            {
+            
                 return false;
+            
+
+
+
+        }
+
+        public bool existeContrato(double numcontrato)
+        {
+            foreach (Contrato item in contrato)
+            {
+                if (item._NumeroContrato.Equals(numcontrato))
+                {
+                    return true;
+                }
+
             }
-
-
-
+            return false;
         }
 
     }
