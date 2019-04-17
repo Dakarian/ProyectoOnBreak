@@ -8,9 +8,9 @@ namespace BibliotecaClases
 {
     public class Contrato
     {
-        private int NumeroContrato;
+        private float NumeroContrato;
 
-        public int _NumeroContrato
+        public float _NumeroContrato
         {
             get { return NumeroContrato; }
             set { NumeroContrato = value; }
