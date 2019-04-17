@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="ColeccionCliente.cs" />
     <Compile Include="ColeccionContrato.cs" />
-    <Compile Include="ColeccionTipo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
