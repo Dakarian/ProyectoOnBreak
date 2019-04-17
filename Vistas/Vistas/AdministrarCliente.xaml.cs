@@ -24,7 +24,6 @@ namespace Vistas
     /// </summary>
     public partial class AdministrarCliente : MetroWindow
     {
-        private ColeccionCliente coleccion = new ColeccionCliente();
         public AdministrarCliente()
         {
             InitializeComponent();
@@ -34,24 +33,46 @@ namespace Vistas
             cbo_empresa.SelectedIndex = 0;
         }
 
-        private void btn_volver_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mw = new MainWindow();
+        private ColeccionCliente coleccion = new ColeccionCliente();
 
+        private ListarCliente listar = new ListarCliente();
 
-            this.Close();
-            mw.Show();
-
-        }
-
-        private void actualizarGrilla()
-        {
-            dgridCliente.ItemsSource = this.coleccion.Clientes;
-            dgridCliente.Items.Refresh();
-
-        }
-
+        //Botón Guardar Cliente
         private async void btn_grabarcli_Click(object sender, RoutedEventArgs e)
+        {
+            if (casillasLlenas() == true && largoRut()== true)
+            {
+                try
+                {
+                    Cliente cli = new Cliente();
+
+                    cli._Rut = txt_rut.Text;
+                    cli._NombreContacto = txt_nom.Text;
+                    cli._RazonSocial = txt_razon.Text;
+                    cli._MailContacto = txt_email.Text;
+                    cli._Direccion = txt_direccion.Text;
+                    cli._Telefono = int.Parse(txt_telefono.Text);
+                    cli._Actividad = (Actividad)cbo_actividad.SelectedIndex;
+                    cli._Tipo = (Empresa)cbo_empresa.SelectedIndex;
+
+                    if (this.coleccion.agregarCliente(cli))
+                    {
+                        await this.ShowMessageAsync("Confirmar", "Cliente Agregado Correctamente");
+                    }
+                    else
+                    {
+                        await this.ShowMessageAsync("Error", "Cliente ya existe");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error : " + ex);
+                }
+            }
+        }
+
+        //Método para verificar si las casillas están llenas
+        private bool casillasLlenas()
         {
             if (txt_rut.Text == string.Empty || txt_rut.Text == " ")
             {
@@ -83,53 +104,20 @@ namespace Vistas
                 MessageBox.Show("Porfavor rellene la casilla Telefono");
             }
 
-            try
+            if (txt_rut.Text!=string.Empty &&
+               txt_nom.Text != string.Empty &&
+               txt_razon.Text != string.Empty &&
+               txt_email.Text != string.Empty &&
+               txt_direccion.Text != string.Empty &&
+               txt_telefono.Text != string.Empty)
             {
-                Cliente cli = new Cliente();
-
-                cli._Rut = txt_rut.Text;
-                cli._NombreContacto = txt_nom.Text;
-                cli._RazonSocial = txt_razon.Text;
-                cli._MailContacto = txt_email.Text;
-                cli._Direccion = txt_direccion.Text;
-                cli._Telefono = int.Parse(txt_telefono.Text);
-                cli._Actividad = (Actividad)cbo_actividad.SelectedIndex;
-                cli._Tipo = (Empresa)cbo_empresa.SelectedIndex;
-
-                if (this.coleccion.agregarCliente(cli))
-                {
-                    await this.ShowMessageAsync("Confirmar", "Cliente Agregado Correctamente");
-                }
-                else
-                {
-                    await this.ShowMessageAsync("Error", "Cliente ya existe");
-                }
-
-                actualizarGrilla();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show("Error : " + ex);
+                return true;
             }
 
+            return false;
         }
 
-
-
-
-        private void Btn_Limpiar_Click(object sender, RoutedEventArgs e)
-        {
-            txt_rut.Text = string.Empty;
-            txt_nom.Text = string.Empty;
-            txt_razon.Text = string.Empty;
-            txt_email.Text = string.Empty;
-            txt_direccion.Text = string.Empty;
-            txt_telefono.Text = string.Empty;
-            cbo_actividad.SelectedIndex = 0;
-            cbo_empresa.SelectedIndex = 0;
-        }
-
+        //Evento de cambio en el textbox Rut
         private void Txt_rut_TextChanged(object sender, TextChangedEventArgs e)
         {
             /*
@@ -139,7 +127,7 @@ namespace Vistas
             */
         }
 
-        //formato Rut con guion y puntos
+        //Método formato Rut con guion y puntos
         public string formatoRut(string rut)
         {
             /*
@@ -165,12 +153,12 @@ namespace Vistas
                     }
                 }
                 return format;
-                */
+            }
+            */
             return rut;
         }
 
-        //evento para limitar ingreso sólo numérico
-
+        //Evento para limitar ingreso sólo numérico
         private void Txt_telefono_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
@@ -180,15 +168,69 @@ namespace Vistas
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        //Boton Limpiar
+        private void Btn_Limpiar_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_rut.Text != string.Empty && txt_rut.Text.Length <= 12)
+            limpiar();
+        }
+
+        //Metodo Limpiar
+        private void limpiar()
+        {
+            txt_rut.Text = string.Empty;
+            txt_nom.Text = string.Empty;
+            txt_razon.Text = string.Empty;
+            txt_email.Text = string.Empty;
+            txt_direccion.Text = string.Empty;
+            txt_telefono.Text = string.Empty;
+            cbo_actividad.SelectedIndex = 0;
+            cbo_empresa.SelectedIndex = 0;
+        }
+        //Botón Buscar
+        private void btn_buscar_click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //Se manda el Listado a la otra ventana
+                listar.Coleccion = this.coleccion;
+                listar.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " +ex);
+            }
+        }
+
+        private bool largoRut()
+        {
+            if (txt_rut.Text.Length <= 12 && txt_rut.Text.Length >= 11)
             {
                 try
                 {
-                    string rut = txt_rut.Text;
-                    Cliente cli = coleccion.buscarRut(rut);
+                    return true;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error: Cliente aún no registrado");
+                }
+                return false;
+            }
+            else
+            {
+                MessageBox.Show("Rellene la casilla rut porfavor");
+                return false;
+            }
+        }
+           
+        public void Buscar()
+        {
+            try
+            {
+                Cliente cli = new Cliente();
+                coleccion.buscarRut(txt_rut.Text);
 
+                if (cli != null)
+                {
                     txt_rut.Text = cli._Rut;
                     txt_nom.Text = cli._NombreContacto;
                     txt_razon.Text = cli._RazonSocial;
@@ -197,14 +239,58 @@ namespace Vistas
                     txt_telefono.Text = cli._Telefono.ToString();
                     cbo_actividad.SelectedIndex = (int)cli._Actividad;
                     cbo_empresa.SelectedIndex = (int)cli._Actividad;
-                    actualizarGrilla();
                 }
-                catch (Exception)
+                else
                 {
-
-                    MessageBox.Show("Cliente no encontrado");
+                    MessageBox.Show("No se encuentra el Cliente");
                 }
             }
+            catch (Exception )
+            {
+                MessageBox.Show("Error al Buscar: ");
+            }
+            
+        }
+
+        //Botón Volver
+        private void btn_volver_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+
+            this.Close();
+            mw.Show();
+        }
+
+        private void Btn_Modificar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string rut = txt_rut.Text;
+                Cliente cli = coleccion.buscarRut(rut);
+
+                cli._Rut = txt_rut.Text;
+                cli._NombreContacto = txt_nom.Text;
+                cli._RazonSocial = txt_razon.Text;
+                cli._MailContacto = txt_email.Text;
+                cli._Direccion = txt_direccion.Text;
+                cli._Telefono = int.Parse(txt_telefono.Text);
+                cli._Actividad = (Actividad)cbo_actividad.SelectedIndex;
+                cli._Tipo = (Empresa)cbo_empresa.SelectedIndex;
+                if (this.coleccion.agregarCliente(cli))
+                {
+                    MessageBox.Show("Cliente Modificado", "Actualizo");
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error al Modificar", "Revise Rut");
+                limpiar();
+            }
+            
+            
         }
     }
 }
+ 
+ 

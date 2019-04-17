@@ -26,3 +26,12 @@ C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Controlador\bin\Debug\BibliotecaClas
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Controlador\obj\Debug\Controlador.dll
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Controlador\obj\Debug\Controlador.pdb
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\bin\Debug\Controlador.dll
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\bin\Debug\Controlador.pdb
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\bin\Debug\BibliotecaClases.dll
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\bin\Debug\BibliotecaClases.pdb
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\obj\Debug\Controlador.csprojAssemblyReference.cache
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\obj\Debug\Controlador.dll
+C:\Users\Jeremiflin\Documents\Visual Studio 2019\Proyectos\OnBreak\Controlador\obj\Debug\Controlador.pdb

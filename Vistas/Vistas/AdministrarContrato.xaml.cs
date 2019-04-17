@@ -67,7 +67,7 @@ namespace Vistas
 
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 
             }
