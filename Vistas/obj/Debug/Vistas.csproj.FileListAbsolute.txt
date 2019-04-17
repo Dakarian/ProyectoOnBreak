@@ -130,3 +130,6 @@ C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Vistas\obj\Debug\MainWindow.baml
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Vistas\obj\Debug\Vistas.g.resources
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Vistas\obj\Debug\Vistas.Properties.Resources.resources
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Vistas\obj\Debug\Vistas.exe
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Vistas\obj\Debug\Vistas.pdb

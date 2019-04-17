@@ -10,13 +10,13 @@
         xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
                       
-        Title="AdministrarCliente" Height="509.862" Width="775.381" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="AdministrarCliente" Height="556.362" Width="409.381" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,7">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <GroupBox x:Name="groupBox" Header="Datos Personales" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Height="446" Width="313">
-            <Grid HorizontalAlignment="Left" Height="383" Margin="4,10,0,-25" VerticalAlignment="Top" Width="733">
+        <GroupBox x:Name="groupBox" Header="Datos Personales" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Height="502" Width="385">
+            <Grid HorizontalAlignment="Left" Height="461" Margin="4,10,0,-60" VerticalAlignment="Top" Width="371">
                 <TextBox x:Name="txt_rut" Controls:TextBoxHelper.Watermark="Ingrese Rut" Controls:TextBoxHelper.IsSpellCheckContextMenuEnabled="True" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="110,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txt_rut_TextChanged" MaxLength="12"/>
                 <Label x:Name="label2" Content="Rut" HorizontalAlignment="Left" Margin="37,27,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label3" Content="Nombre" HorizontalAlignment="Left" Margin="11,63,0,0" VerticalAlignment="Top"/>
@@ -31,21 +31,19 @@
                 <ComboBox x:Name="cbo_actividad" HorizontalAlignment="Left" Margin="13,299,0,0" VerticalAlignment="Top" Width="120"/>
                 <ComboBox x:Name="cbo_empresa" HorizontalAlignment="Left" Margin="178,299,0,0" VerticalAlignment="Top" Width="120"/>
                 <Label x:Name="label1" Content="Empresa" HorizontalAlignment="Left" Margin="212,273,0,0" VerticalAlignment="Top"/>
-                <Button x:Name="btn_grabarcli" Content="Guardar" HorizontalAlignment="Left" Margin="28,344,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="btn_grabarcli_Click"/>
-                <Button x:Name="btn_limpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="212,344,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Limpiar_Click"/>
+                <Button x:Name="btn_grabarcli" Content="Guardar" HorizontalAlignment="Left" Margin="28,368,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btn_grabarcli_Click"/>
+                <Button x:Name="btn_limpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="136,369,0,0" VerticalAlignment="Top" Width="76" Click="Btn_Limpiar_Click"/>
                 <Label x:Name="label3_Copy" Content="Razón Social" HorizontalAlignment="Left" Margin="11,102,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label4_Copy" Content="Dirección" HorizontalAlignment="Left" Margin="27,168,0,0" VerticalAlignment="Top"/>
-                <Button x:Name="btn_buscar" Content="" HorizontalAlignment="Left" Margin="240,24,0,0" VerticalAlignment="Top" Width="47" Height="29" Click="Button_Click">
+                <Button x:Name="btn_buscar" Content="" HorizontalAlignment="Left" Margin="240,24,0,0" VerticalAlignment="Top" Width="47" Height="29" Click="btn_buscar_click">
                     <Button.Background>
                         <ImageBrush ImageSource="/Vistas;component/Iconos/Help.png" Stretch="Uniform"/>
                     </Button.Background>
                 </Button>
+                <Button x:Name="btn_volver" HorizontalAlignment="Left" Height="30" Margin="293,421,0,0" VerticalAlignment="Top" Width="68" Click="btn_volver_Click" Grid.Column="0" Content="Volver"/>
+                <Button x:Name="btn_Modificar" Content="Modificar" HorizontalAlignment="Left" Margin="240,369,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="Btn_Modificar_Click"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Datos Guardados" HorizontalAlignment="Left" Height="446" Margin="342,18,0,0" VerticalAlignment="Top" Width="415">
-            <DataGrid x:Name="dgridCliente" HorizontalAlignment="Left" Height="226" Margin="10,0,0,0" VerticalAlignment="Top" Width="366"/>
-        </GroupBox>
-        <Button x:Name="btn_volver" HorizontalAlignment="Left" Height="29" Margin="674,418,0,0" VerticalAlignment="Top" Width="69" Click="btn_volver_Click" Grid.Column="0" Content="Volver"/>
 
     </Grid>
 </Controls:MetroWindow>
