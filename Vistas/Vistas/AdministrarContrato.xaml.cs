@@ -25,9 +25,10 @@ namespace Vistas
     public partial class AdministrarContrato : MetroWindow
     {
         private ColeccionContrato ccontrato = new ColeccionContrato();
-      
+        Contrato con = new Contrato();
 
-        
+
+
 
 
         public AdministrarContrato()
@@ -214,7 +215,7 @@ namespace Vistas
 
         private async void btn_grabar_Click(object sender, RoutedEventArgs e)
         {
-            Contrato con = new Contrato();
+            
             try
             {
                 /*
@@ -235,7 +236,15 @@ namespace Vistas
                  */
 
                 //datos que no dependen del usuario autofill
-                con._NumeroContrato = float.Parse(txt_numcontrato.Text);
+                if (txt_numcontrato.Text != null)
+                {
+                    con._NumeroContrato = float.Parse(txt_numcontrato.Text);
+                }
+                else
+                {
+                    await this.ShowMessageAsync("asdas","te falla la wea aqui");
+                }
+                
                 con._Creacion = (DateTime)dp_creacion.SelectedDate;
                 DateTime termino = con._Creacion.AddMonths(1);
                 con._Termino = termino;
