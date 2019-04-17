@@ -256,42 +256,50 @@ namespace Vistas
                 if (txt_direccion.Text.Equals(""))
                 {
                     await this.ShowMessageAsync("¡Error!", "El campo no puede estar nulo");
+                    txt_direccion.Focus();
                 }
                 else
                 {
                     con._Direccion = txt_direccion.Text;
+                    if (ckbox_vigente.IsChecked == true)
+                    {
+                        con._EstaVigente = true;
+
+                        if (txt_obs.Text.Equals(""))
+                        {
+                            await this.ShowMessageAsync("¡Error!", "Añada una observación");
+                            txt_obs.Focus();
+                        }
+                        else
+                        {
+                            con._Observaciones = txt_obs.Text;
+
+                            bool resp = ccontrato.agregarContrato(con);
+
+                            if (resp == true)
+                            {
+                                await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
+                                actualizarGrid();
+                            }
+                            else
+                            {
+                                await this.ShowMessageAsync("Error", "Contrato ya existe");
+                            }
+
+                        }
+                    }
+                    else
+                    {
+                        con._EstaVigente = false;
+                    }
+                    
                 }
 
-                if (ckbox_vigente.IsChecked == true)
-                {
-                    con._EstaVigente = true;
-                }
-                else
-                {
-                    con._EstaVigente = false;
-                }
-                if (txt_obs.Text.Equals(""))
-                {
-                    await this.ShowMessageAsync("¡Error!", "Añada una observación");
-                }
-                else
-                {
-                    con._Observaciones = txt_obs.Text;
 
-                }
 
-                bool resp = ccontrato.agregarContrato(con);
 
-                if (resp == true)
-                {
-                    await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
-                }
-                else
-                {
-                    await this.ShowMessageAsync("Error", "Contrato ya existe");
-                }
 
-                actualizarGrid();
+                
 
             }
             catch (Exception ex)
