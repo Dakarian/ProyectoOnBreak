@@ -26,3 +26,10 @@ C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Controlador\bin\Debug\BibliotecaClas
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Controlador\obj\Debug\Controlador.dll
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\Controlador\obj\Debug\Controlador.pdb
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\bin\Debug\Controlador.dll
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\bin\Debug\Controlador.pdb
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\bin\Debug\BibliotecaClases.dll
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\bin\Debug\BibliotecaClases.pdb
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\obj\Debug\Controlador.dll
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\obj\Debug\Controlador.pdb
