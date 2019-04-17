@@ -8,9 +8,9 @@ namespace BibliotecaClases
 {
     public class Contrato
     {
-        private float NumeroContrato;
+        private double NumeroContrato;
 
-        public float _NumeroContrato
+        public double _NumeroContrato
         {
             get { return NumeroContrato; }
             set { NumeroContrato = value; }
@@ -40,9 +40,9 @@ namespace BibliotecaClases
             set { FechaHoraInicio = value; }
         }
 
-        private DateTime FechaHoraTermino;
+        private String FechaHoraTermino;
 
-        public DateTime _FechaHoraTermino
+        public String _FechaHoraTermino
         {
             get { return FechaHoraTermino; }
             set { FechaHoraTermino = value; }

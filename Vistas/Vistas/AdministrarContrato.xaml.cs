@@ -238,7 +238,7 @@ namespace Vistas
                 //datos que no dependen del usuario autofill
                 if (txt_numcontrato.Text != null)
                 {
-                    con._NumeroContrato = float.Parse(txt_numcontrato.Text);
+                    con._NumeroContrato = double.Parse(txt_numcontrato.Text);
                 }
                 else
                 {
@@ -248,11 +248,9 @@ namespace Vistas
                 con._Creacion = (DateTime)dp_creacion.SelectedDate;
                 DateTime termino = con._Creacion.AddMonths(1);
                 con._Termino = termino;
-                DateTime horaini = DateTime.Now;
-                string fhoraini = horaini.ToString("HH:mm");
-                con._FechaHoraInicio = fhoraini;
-                DateTime horafin = horaini.AddMonths(1);
-                con._FechaHoraTermino = horafin;
+                con._FechaHoraInicio = txt_hrini.Text;
+                DateTime horafin = DateTime.Now;
+                con._FechaHoraTermino = horafin.ToString("HH:mm");
                 if (txt_direccion.Text.Equals(""))
                 {
                     await this.ShowMessageAsync("¡Error!", "El campo no puede estar nulo");
