@@ -26,3 +26,8 @@ C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\BibliotecaClases\bin\Debug\Bibliotec
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
 C:\Users\duoc\Desktop\asdsa\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csprojResolveAssemblyReference.cache
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
