@@ -20,7 +20,7 @@ namespace Controlador
         }
 
 
-        public Contrato buscarContrato(int ncontrato)
+        public Contrato buscarContrato(float ncontrato)
         {
 
             foreach (var item in contrato)
@@ -46,7 +46,10 @@ namespace Controlador
                 this.contrato.Add(nvContrato);
                 return true;
             }
+            else {
                 return false;
+            }
+                
             
 
         }

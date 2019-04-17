@@ -25,6 +25,7 @@ namespace Vistas
     public partial class AdministrarContrato : MetroWindow
     {
         private ColeccionContrato ccontrato = new ColeccionContrato();
+      
 
         
 
@@ -214,34 +215,9 @@ namespace Vistas
         private async void btn_grabar_Click(object sender, RoutedEventArgs e)
         {
             Contrato con = new Contrato();
-            Tipo tipo = new Tipo();
             try
             {
-                
-
-                //datos que depende del usuario no debe ser nulo
-                if (txt_direccion.Text.Equals(""))
-                {
-                    await this.ShowMessageAsync("¡Error!", "El campo no puede estar nulo");
-                }
-                else
-                {
-                    con._Direccion = txt_direccion.Text;
-                }
-                //otro dato
-                if (txt_obs.Text.Equals(""))
-                {
-                    await this.ShowMessageAsync("¡Error!", "Añada una observación");
-                }
-                else
-                {
-                    con._Observaciones = txt_obs.Text;
-                    
-                }
-
-
-
-
+                /*
                 //variables
                 int Id = 0;
                 string Nombre = "";
@@ -251,27 +227,15 @@ namespace Vistas
                 int cant_personas = 0;
 
                 // como agregar valores base?
-                /*
+                
 
                     if?
 
 
                  */
 
-
-
-
-
-
-
-
-
-
-
-
-
                 //datos que no dependen del usuario autofill
-                con._NumeroContrato = int.Parse(txt_numcontrato.Text);
+                con._NumeroContrato = float.Parse(txt_numcontrato.Text);
                 con._Creacion = (DateTime)dp_creacion.SelectedDate;
                 DateTime termino = con._Creacion.AddMonths(1);
                 con._Termino = termino;
@@ -280,6 +244,14 @@ namespace Vistas
                 con._FechaHoraInicio = fhoraini;
                 DateTime horafin = horaini.AddMonths(1);
                 con._FechaHoraTermino = horafin;
+                if (txt_direccion.Text.Equals(""))
+                {
+                    await this.ShowMessageAsync("¡Error!", "El campo no puede estar nulo");
+                }
+                else
+                {
+                    con._Direccion = txt_direccion.Text;
+                }
 
                 if (ckbox_vigente.IsChecked == true)
                 {
@@ -289,8 +261,19 @@ namespace Vistas
                 {
                     con._EstaVigente = false;
                 }
+                if (txt_obs.Text.Equals(""))
+                {
+                    await this.ShowMessageAsync("¡Error!", "Añada una observación");
+                }
+                else
+                {
+                    con._Observaciones = txt_obs.Text;
 
-                if (ccontrato.agregarContrato(con))
+                }
+
+                bool resp = ccontrato.agregarContrato(con);
+
+                if (resp == true)
                 {
                     await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
                 }
@@ -304,11 +287,13 @@ namespace Vistas
             }
             catch (Exception ex)
             {
-                await this.ShowMessageAsync("error","no especificado, no se ha grabado nada");
+                await this.ShowMessageAsync("error", "" + ex);
                 actualizarGrid();
             }
         }
 
+        }
+
 
     }
-}
+
