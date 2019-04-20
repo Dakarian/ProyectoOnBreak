@@ -149,10 +149,9 @@ namespace Vistas
             }
         }
 
-        private async void btn_valorizar_Click(object sender, RoutedEventArgs e)
+        public async void btn_valorizar_Click(object sender, RoutedEventArgs e)
         {
             int ValorBase = 0;
-            string nombre = "";
             //llenar datos de tipo
             if ((int)cbo_evento.SelectedItem == 0)
             {
@@ -164,26 +163,22 @@ namespace Vistas
             {
                 ValorBase = 15000;
                 txt_vevento.Text = ValorBase.ToString();
-                nombre = "Baby shower";
 
             }
             if ((int)cbo_evento.SelectedItem == 2)
             {
                 ValorBase = 20000;
                 txt_vevento.Text = ValorBase.ToString();
-                nombre = "Cumpleaños";
             }
             if ((int)cbo_evento.SelectedItem == 3)
             {
                 ValorBase = 30000;
                 txt_vevento.Text = ValorBase.ToString();
-                nombre = "Bodas";
             }
             if ((int)cbo_evento.SelectedItem == 4)
             {
                 ValorBase = 40000;
                 txt_vevento.Text = ValorBase.ToString();
-                nombre = "Galas";
             }
             //llenar datos de tipo
         }
@@ -327,7 +322,8 @@ namespace Vistas
             {
                 
                 tip._Id = cbo_evento.SelectedIndex;
-                tip._Nombre = cbo_evento.Name;
+                tip._Nombre = cbo_evento.SelectedItem.ToString();
+                tip._ValorBase = int.Parse(txt_vevento.Text);
                 tip._Personas = double.Parse(txt_valorp.Text);
                 tip._PersonalAdicional = double.Parse(txt_valora.Text);
                 tip._Total = double.Parse(txt_total.Text);

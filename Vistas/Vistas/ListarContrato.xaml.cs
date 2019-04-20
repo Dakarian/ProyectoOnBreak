@@ -22,10 +22,12 @@ namespace Vistas
     public partial class ListarContrato : Window
     {
         ColeccionContrato ccon = new ColeccionContrato();
-        public ListarContrato()
+        ColeccionTipo ctipo = new ColeccionTipo();
+            public ListarContrato()
         {
             InitializeComponent();
             dg_contrato.ItemsSource = ccon.Listar();
+            dg_evento.ItemsSource = ctipo.Listar();
         }
     }
 }

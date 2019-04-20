@@ -53,5 +53,11 @@ namespace Controlador
             return false;
 
         }
+        //Listar
+        public List<Tipo> Listar()
+        {
+            return Tipos;
+        }
+
     }
 }
