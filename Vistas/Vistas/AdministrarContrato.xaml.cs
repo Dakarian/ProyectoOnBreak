@@ -39,21 +39,13 @@ namespace Vistas
 
             dp_creacion.SelectedDate = DateTime.Today;
 
-            DateTime horaini = DateTime.Now;
-            string fhoraini = horaini.ToString("HH:mm");
-            txt_hrini.Text = fhoraini;
 
             cbo_evento.ItemsSource = Enum.GetValues(typeof(Evento));
             cbo_evento.SelectedIndex = 0;
 
         }
 
-        private void actualizarGrid()
-        {
-            dg_contrato.ItemsSource = ccontrato.Contrato;
-            dg_contrato.Items.Refresh();
 
-        }
 
         private void btn_volver_Click(object sender, RoutedEventArgs e)
         {
@@ -62,6 +54,23 @@ namespace Vistas
             mw.Show();
         }
 
+        private void txt_hrini_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
+                e.Handled = false;
+            else
+                e.Handled = true;
+
+        }
+
+        private void txt_hrfin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
+                e.Handled = false;
+            else
+                e.Handled = true;
+
+        }
 
         private async void btn_valorp_Click(object sender, RoutedEventArgs e)
         {
@@ -218,84 +227,83 @@ namespace Vistas
 
             try
             {
-                /*
-                //variables
-                int Id = 0;
-                string Nombre = "";
-                int ValorBase = 0;
-                int PersonalBase = 0;
-                double uf = 27593.58;
-                int cant_personas = 0;
 
-                // como agregar valores base?
-                
-
-                    if?
-
-
-                 */
-
-                //datos que no dependen del usuario autofill
                 if (txt_numcontrato.Text != null)
                 {
                     con._NumeroContrato = double.Parse(txt_numcontrato.Text);
                 }
                 else
                 {
-                    await this.ShowMessageAsync("asdas", "te falla la wea aqui");
+                    await this.ShowMessageAsync("error", "te falla aqui");
                 }
 
                 con._Creacion = (DateTime)dp_creacion.SelectedDate;
                 DateTime termino = con._Creacion.AddMonths(1);
                 con._Termino = termino;
-                con._FechaHoraInicio = txt_hrini.Text;
-                DateTime horafin = DateTime.Now;
-                con._FechaHoraTermino = horafin.ToString("HH:mm");
-                if (txt_direccion.Text.Equals(""))
+
+                if (txt_hrini.Text.Equals("") && txt_hrini2.Text.Equals(""))
                 {
-                    await this.ShowMessageAsync("¡Error!", "El campo no puede estar nulo");
-                    txt_direccion.Focus();
+                    await this.ShowMessageAsync("Error", "ingresa una hora de inicio");
                 }
                 else
                 {
-                    con._Direccion = txt_direccion.Text;
-                    if (ckbox_vigente.IsChecked == true)
+                    con._FechaHoraInicio = txt_hrini.Text + ":" + txt_hrini2.Text;
+
+                    if (txt_hrfin.Text.Equals("") && txt_hrfin2.Equals(""))
                     {
-                        con._EstaVigente = true;
-
-                        if (txt_obs.Text.Equals(""))
-                        {
-                            await this.ShowMessageAsync("¡Error!", "Añada una observación");
-                            txt_obs.Focus();
-                        }
-                        else
-                        {
-                            con._Observaciones = txt_obs.Text;
-
-                            bool resp = ccontrato.agregarContrato(con);
-
-                            if (resp == true)
-                            {
-                                await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
-                                actualizarGrid();
-                            }
-                            else
-                            {
-                                await this.ShowMessageAsync("Error", "Contrato ya existe");
-                            }
-
-                        }
+                        await this.ShowMessageAsync("Error", "Ingresa una hora de termino valida");
                     }
                     else
                     {
-                        con._EstaVigente = false;
+                        con._FechaHoraTermino = txt_hrfin.Text + ":" + txt_hrfin2.Text;
+
+                        if (txt_direccion.Text.Equals(""))
+                        {
+                            await this.ShowMessageAsync("¡Error!", "La direccion no puede estar nula");
+                            txt_direccion.Focus();
+                        }
+                        else
+                        {
+                            con._Direccion = txt_direccion.Text;
+                            if (ckbox_vigente.IsChecked == true)
+                            {
+                                con._EstaVigente = true;
+
+                                if (txt_obs.Text.Equals(""))
+                                {
+                                    await this.ShowMessageAsync("¡Error!", "Añada una observación");
+                                    txt_obs.Focus();
+                                }
+                                else
+                                {
+                                    con._Observaciones = txt_obs.Text;
+
+                                    bool resp = ccontrato.agregarContrato(con);
+
+                                    if (resp == true)
+                                    {
+                                        await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
+
+                                    }
+                                    else
+                                    {
+                                        await this.ShowMessageAsync("Error", "Contrato ya existe");
+                                    }
+
+                                }
+                            }
+                            else
+                            {
+                                con._EstaVigente = false;
+                            }
+
+
+
+
+                        }
                     }
-
                 }
-
-
-
-
+                
 
 
 
@@ -303,11 +311,31 @@ namespace Vistas
             catch (Exception ex)
             {
                 await this.ShowMessageAsync("error", "" + ex);
-                actualizarGrid();
+
             }
         }
 
+        private void txt_hrini_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            txt_hrini.MaxLength = 2;
+            
+        }
+
+        private void txt_hrini2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            txt_hrini2.MaxLength = 2;
+        }
+
+        private void txt_hrfin_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            txt_hrfin.MaxLength = 2;
+        }
+
+        private void txt_hrfin2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            txt_hrfin2.MaxLength = 2;
+        }
     }
-
-
 }
+
+    

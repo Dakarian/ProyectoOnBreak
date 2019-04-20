@@ -10,7 +10,7 @@ namespace Controlador
     public class ColeccionContrato
     {
 
-        private List<Contrato> contrato = new List<Contrato>();
+        public static List<Contrato> contrato = new List<Contrato>();
 
         //Coleccion de contrato
         public List<Contrato> Contrato
@@ -42,15 +42,12 @@ namespace Controlador
 
             if (existeContrato(con._NumeroContrato)==false)
             {
-                this.contrato.Add(con);
+                contrato.Add(con);
                 return true;
             }
             
                 return false;
             
-
-
-
         }
 
         public bool existeContrato(double numcontrato)
