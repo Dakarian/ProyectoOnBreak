@@ -9,8 +9,49 @@ namespace Controlador
 {
     public class ColeccionTipo
     {
-        Tipo tipo = new Tipo();
-        List<Tipo> ltipo = new List<Tipo>();
-        
+        public static List<Tipo> Tipos = new List<Tipo>();
+
+        public Tipo buscarContrato(float ncontrato)
+        {
+
+            foreach (var item in Tipos)
+            {
+                if (item._NumeroContrato == ncontrato)
+                {
+                    return item;
+                }
+            }
+
+            return null;
+
+        }
+
+        public bool existeContrato(double numcontrato)
+        {
+            foreach (Tipo item in Tipos)
+            {
+                if (item._NumeroContrato.Equals(numcontrato))
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        }
+
+
+        public bool agregarTipo(Tipo tip)
+        {
+
+
+            if (existeContrato(tip._NumeroContrato) == false)
+            {
+                Tipos.Add(tip);
+                return true;
+            }
+
+            return false;
+
+        }
     }
 }

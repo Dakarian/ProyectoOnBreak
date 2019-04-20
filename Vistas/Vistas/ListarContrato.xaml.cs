@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BibliotecaClases;
+using Controlador;
 
 namespace Vistas
 {
@@ -19,9 +21,11 @@ namespace Vistas
     /// </summary>
     public partial class ListarContrato : Window
     {
+        ColeccionContrato ccon = new ColeccionContrato();
         public ListarContrato()
         {
             InitializeComponent();
+            dg_contrato.ItemsSource = ccon.Listar();
         }
     }
 }

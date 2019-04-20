@@ -106,13 +106,38 @@ namespace BibliotecaClases
             set { ValorBase = value; }
         }
 
-        private int PersonalBase;
+        private double Personas;
 
-        public int _PersonalBase
+        public double _Personas
         {
-            get { return PersonalBase; }
-            set { PersonalBase = value; }
+            get { return Personas; }
+            set { Personas = value; }
         }
+
+        private double PersonalAdicional;
+
+        public double _PersonalAdicional
+        {
+            get { return PersonalAdicional; }
+            set { PersonalAdicional = value; }
+        }
+
+        private double Total;
+
+        public double _Total
+        {
+            get { return Total; }
+            set { Total = value; }
+        }
+
+        private double NumeroContrato;
+
+        public double _NumeroContrato
+        {
+            get { return NumeroContrato; }
+            set { NumeroContrato = value; }
+        }
+
         public Tipo()
         {
 

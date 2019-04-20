@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
-        Title="ListarContrato" Height="300" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="ListarContrato" Height="364.017" Width="758.159" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        
+        <DataGrid x:Name="dg_contrato" HorizontalAlignment="Left" Height="263" Margin="10,10,0,0" VerticalAlignment="Top" Width="504"/>
+
     </Grid>
 </Window>

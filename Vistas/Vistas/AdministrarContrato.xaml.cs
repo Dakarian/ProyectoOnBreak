@@ -25,7 +25,9 @@ namespace Vistas
     public partial class AdministrarContrato : MetroWindow
     {
         private ColeccionContrato ccontrato = new ColeccionContrato();
+        private ColeccionTipo ctipo = new ColeccionTipo();
         Contrato con = new Contrato();
+        Tipo tip = new Tipo();
 
 
 
@@ -150,6 +152,7 @@ namespace Vistas
         private async void btn_valorizar_Click(object sender, RoutedEventArgs e)
         {
             int ValorBase = 0;
+            string nombre = "";
             //llenar datos de tipo
             if ((int)cbo_evento.SelectedItem == 0)
             {
@@ -160,26 +163,32 @@ namespace Vistas
             if ((int)cbo_evento.SelectedItem == 1)
             {
                 ValorBase = 15000;
-                txt_vevento.Text = ValorBase.ToString(); ;
+                txt_vevento.Text = ValorBase.ToString();
+                nombre = "Baby shower";
 
             }
             if ((int)cbo_evento.SelectedItem == 2)
             {
                 ValorBase = 20000;
                 txt_vevento.Text = ValorBase.ToString();
+                nombre = "Cumpleaños";
             }
             if ((int)cbo_evento.SelectedItem == 3)
             {
                 ValorBase = 30000;
                 txt_vevento.Text = ValorBase.ToString();
+                nombre = "Bodas";
             }
             if ((int)cbo_evento.SelectedItem == 4)
             {
                 ValorBase = 40000;
                 txt_vevento.Text = ValorBase.ToString();
+                nombre = "Galas";
             }
             //llenar datos de tipo
         }
+
+
 
         private async void btn_total_Click(object sender, RoutedEventArgs e)
         {
@@ -313,6 +322,36 @@ namespace Vistas
                 await this.ShowMessageAsync("error", "" + ex);
 
             }
+
+            try
+            {
+                
+                tip._Id = cbo_evento.SelectedIndex;
+                tip._Nombre = cbo_evento.Name;
+                tip._Personas = double.Parse(txt_valorp.Text);
+                tip._PersonalAdicional = double.Parse(txt_valora.Text);
+                tip._Total = double.Parse(txt_total.Text);
+                tip._NumeroContrato = double.Parse(txt_numcontrato.Text);
+
+                bool resp = ctipo.agregarTipo(tip);
+
+                if (resp == true)
+                {
+                    await this.ShowMessageAsync("Confirmar", "Evento Agregado Correctamente");
+
+                }
+                else
+                {
+                    await this.ShowMessageAsync("Error", "Evento ya existe");
+                }
+                
+
+            }
+            catch (Exception ex)
+            {
+
+                await this.ShowMessageAsync("Error","No se pudo guardar el tipo");
+            }
         }
 
         private void txt_hrini_TextChanged(object sender, TextChangedEventArgs e)
@@ -334,6 +373,13 @@ namespace Vistas
         private void txt_hrfin2_TextChanged(object sender, TextChangedEventArgs e)
         {
             txt_hrfin2.MaxLength = 2;
+        }
+
+        private void btn_listarcon_Click(object sender, RoutedEventArgs e)
+        {
+            ListarContrato lc = new ListarContrato();
+            lc.Show();
+
         }
     }
 }
