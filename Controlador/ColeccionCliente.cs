@@ -13,7 +13,7 @@ namespace Controlador
 
 
 
-        private List<Cliente> clientes = new List<Cliente>();
+        public static List<Cliente> clientes = new List<Cliente>();
 
         public ColeccionCliente()
         {
@@ -54,7 +54,7 @@ namespace Controlador
         {
             if (existeRut(cli._Rut) == false)
             {
-                this.clientes.Add(cli);
+                clientes.Add(cli);
                 return true;
             }
             return false;
@@ -80,7 +80,7 @@ namespace Controlador
             Cliente cliente = buscarRut(rut);
             if (cliente != null)
             {
-                this.clientes.Remove(cliente);
+                clientes.Remove(cliente);
                 return true;
             }
             return false;
