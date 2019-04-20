@@ -59,6 +59,11 @@
                 <Label x:Name="label16" Content=":" HorizontalAlignment="Left" Margin="161,188,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="txt_hrini2" HorizontalAlignment="Left" Height="23" Margin="179,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" TextChanged="txt_hrini2_TextChanged"/>
                 <TextBox x:Name="txt_hrfin2" HorizontalAlignment="Left" Height="23" Margin="179,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" TextChanged="txt_hrfin2_TextChanged"/>
+                <Controls:Tile x:Name="btn_listarcon"   HorizontalAlignment="Left" Margin="291,28,0,0" VerticalAlignment="Top" Width="29" Height="26" Click="btn_listarcon_Click">
+                    <Image Source="/Vistas;component/Iconos/Help.png"></Image>
+                </Controls:Tile>
+                
+
             </Grid>
         </GroupBox>
 

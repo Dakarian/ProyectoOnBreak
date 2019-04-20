@@ -63,5 +63,12 @@ namespace Controlador
             return false;
         }
 
+
+        //Listar
+        public List<Contrato> Listar()
+        {
+            return contrato;
+        }
+
     }
 }
