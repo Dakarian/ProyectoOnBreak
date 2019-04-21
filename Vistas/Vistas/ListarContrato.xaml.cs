@@ -13,21 +13,80 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BibliotecaClases;
 using Controlador;
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
+using MahApps.Metro.Behaviours;
 
 namespace Vistas
 {
     /// <summary>
     /// Lógica de interacción para ListarContrato.xaml
     /// </summary>
-    public partial class ListarContrato : Window
+    public partial class ListarContrato : MetroWindow
     {
         ColeccionContrato ccon = new ColeccionContrato();
         ColeccionTipo ctipo = new ColeccionTipo();
+        Tipo tipos = new Tipo();
+
             public ListarContrato()
         {
             InitializeComponent();
             dg_contrato.ItemsSource = ccon.Listar();
-            dg_evento.ItemsSource = ctipo.Listar();
+        }
+        //filtro por contrato
+        private void txt_filtrocon_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
+            if (txt_filtrocon.Text.Length > 0)
+            {
+                string numcontrato = txt_filtrocon.Text.ToLower();
+                string contratobuscado = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(numcontrato);
+                var posicion = this.ccon.Contrato.Where(r => r._NumeroContrato.ToString().Contains(contratobuscado)).ToList();
+                dg_contrato.ItemsSource = posicion;
+            }
+            else
+            {
+                dg_contrato.ItemsSource = this.ccon.Contrato;
+            }
+
+
+        
+        }
+
+        private void btn_volver_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            this.Close();
+            mw.Show();
+            
+        }
+
+        private void txt_filtroev_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+ 
+            if (txt_filtroev.Text.Length > 0)
+            {
+                string nombre = txt_filtroev.Text.ToLower();
+                string eventobuscado = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(nombre);
+                var Posicion = this.ctipo.Tips.Where(r => r._Nombre.ToString().Contains(eventobuscado)).ToList();
+                dg_contrato.ItemsSource = Posicion;
+            }
+            else
+            {
+                dg_contrato.ItemsSource = this.ctipo.Tips;
+            }
+        }
+
+        private void btn_actualizargrid_Click(object sender, RoutedEventArgs e)
+        {
+            dg_contrato.ItemsSource = this.ccon.Contrato;
+            dg_contrato.Items.Refresh();
+        }
+
+        private async void btn_vigencia_Click(object sender, RoutedEventArgs e)
+        {
+            await this.ShowMessageAsync("Advertencia","¿Realmente desea quitar la vigencia del contrato?",MessageDialogStyle.AffirmativeAndNegative);
         }
     }
 }

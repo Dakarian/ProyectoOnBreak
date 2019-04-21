@@ -11,6 +11,16 @@ namespace Controlador
     {
         public static List<Tipo> Tipos = new List<Tipo>();
 
+        //Coleccion de contrato
+        public List<Tipo> Tips
+        {
+            get { return Tipos; }
+            set { Tipos = value; }
+        }
+
+
+
+
         public Tipo buscarContrato(float ncontrato)
         {
 

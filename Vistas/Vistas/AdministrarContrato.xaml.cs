@@ -24,6 +24,7 @@ namespace Vistas
     /// </summary>
     public partial class AdministrarContrato : MetroWindow
     {
+        private ColeccionCliente ccli = new ColeccionCliente();
         private ColeccionContrato ccontrato = new ColeccionContrato();
         private ColeccionTipo ctipo = new ColeccionTipo();
         Contrato con = new Contrato();
@@ -253,7 +254,7 @@ namespace Vistas
                 {
                     con._FechaHoraInicio = txt_hrini.Text + ":" + txt_hrini2.Text;
 
-                    if (txt_hrfin.Text.Equals("") && txt_hrfin2.Equals(""))
+                    if (txt_hrfin.Text.Equals("") && txt_hrfin2.Text.Equals(""))
                     {
                         await this.ShowMessageAsync("Error", "Ingresa una hora de termino valida");
                     }
@@ -281,18 +282,26 @@ namespace Vistas
                                 else
                                 {
                                     con._Observaciones = txt_obs.Text;
-
-                                    bool resp = ccontrato.agregarContrato(con);
-
-                                    if (resp == true)
+                                    if (ccli.existeRut(txt_rutc.Text)==false)
                                     {
-                                        await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
-
+                                        await this.ShowMessageAsync("Error","Asigna un rut válido a este contrato!");
                                     }
                                     else
                                     {
-                                        await this.ShowMessageAsync("Error", "Contrato ya existe");
+                                        con._Rut = txt_rutc.Text;
+                                        bool resp = ccontrato.agregarContrato(con);
+
+                                        if (resp == true)
+                                        {
+                                            await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
+
+                                        }
+                                        else
+                                        {
+                                            await this.ShowMessageAsync("Error", "Contrato ya existe");
+                                        }
                                     }
+                                    
 
                                 }
                             }
@@ -318,36 +327,45 @@ namespace Vistas
 
             }
 
-            try
+
+            if (ccli.existeRut(txt_rutc.Text)==true)
             {
-                
-                tip._Id = cbo_evento.SelectedIndex;
-                tip._Nombre = cbo_evento.SelectedItem.ToString();
-                tip._ValorBase = int.Parse(txt_vevento.Text);
-                tip._Personas = double.Parse(txt_valorp.Text);
-                tip._PersonalAdicional = double.Parse(txt_valora.Text);
-                tip._Total = double.Parse(txt_total.Text);
-                tip._NumeroContrato = double.Parse(txt_numcontrato.Text);
-
-                bool resp = ctipo.agregarTipo(tip);
-
-                if (resp == true)
+                try
                 {
-                    await this.ShowMessageAsync("Confirmar", "Evento Agregado Correctamente");
+
+                    tip._Id = cbo_evento.SelectedIndex;
+                    tip._Nombre = cbo_evento.SelectedItem.ToString();
+                    tip._ValorBase = int.Parse(txt_vevento.Text);
+                    tip._Personas = double.Parse(txt_valorp.Text);
+                    tip._PersonalAdicional = double.Parse(txt_valora.Text);
+                    tip._Total = double.Parse(txt_total.Text);
+                    tip._NumeroContrato = double.Parse(txt_numcontrato.Text);
+
+                    bool resp = ctipo.agregarTipo(tip);
+
+                    if (resp == true)
+                    {
+                        await this.ShowMessageAsync("Confirmar", "Evento Agregado Correctamente");
+
+                    }
+                    else
+                    {
+                        await this.ShowMessageAsync("Error", "Evento ya existe");
+                    }
+
 
                 }
-                else
+                catch (Exception ex)
                 {
-                    await this.ShowMessageAsync("Error", "Evento ya existe");
+
+                    await this.ShowMessageAsync("Error", "No se pudo guardar el tipo");
                 }
-                
-
             }
-            catch (Exception ex)
+            else
             {
-
-                await this.ShowMessageAsync("Error","No se pudo guardar el tipo");
+                await this.ShowMessageAsync("Error", "Rellena todos los campos antes de continuar");
             }
+            
         }
 
         private void txt_hrini_TextChanged(object sender, TextChangedEventArgs e)
@@ -376,6 +394,41 @@ namespace Vistas
             ListarContrato lc = new ListarContrato();
             lc.Show();
 
+        }
+
+        private async void btn_validar_Click(object sender, RoutedEventArgs e)
+        {
+            if (ccli.existeRut(txt_rutc.Text)==true)
+            {
+                await this.ShowMessageAsync("Validado", "Rut existe");
+                txt_rutc.IsEnabled = false;
+            }
+            else
+            {
+                await this.ShowMessageAsync("Error","Rut no existe");
+                txt_rutc.Clear();
+            }
+        }
+
+        private void txt_rutc_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            txt_rutc.MaxLength = 12;
+        }
+
+        private void txt_canta_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txt_cantp_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
+                e.Handled = false;
+            else
+                e.Handled = true;
         }
     }
 }

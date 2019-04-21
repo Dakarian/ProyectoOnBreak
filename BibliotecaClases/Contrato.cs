@@ -71,6 +71,15 @@ namespace BibliotecaClases
             get { return Observaciones; }
             set { Observaciones = value; }
         }
+
+        private String Rut;
+
+        public String _Rut
+        {
+            get { return Rut; }
+            set { Rut = value; }
+        }
+
         public Contrato()
         {
 

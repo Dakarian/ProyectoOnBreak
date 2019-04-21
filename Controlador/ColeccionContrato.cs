@@ -20,6 +20,7 @@ namespace Controlador
         }
 
 
+
         public Contrato buscarContrato(float ncontrato)
         {
 

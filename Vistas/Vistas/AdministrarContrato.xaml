@@ -11,13 +11,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
-        Title="AdministrarContrato" Height="626.394" Width="1197.197" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="AdministrarContrato" Height="626.394" Width="1014.974" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,4,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <GroupBox x:Name="groupBox" Header="Datos Contrato" HorizontalAlignment="Left" Height="577" Margin="10,10,0,0" VerticalAlignment="Top" Width="1167">
-            <Grid Margin="0,0,8,1">
+        <GroupBox x:Name="groupBox" Header="Datos Contrato" Height="577" Margin="10,10,10,0" VerticalAlignment="Top">
+            <Grid Margin="0,0,0,1">
                 <Label x:Name="label" Content="Numero Contrato" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="txt_numcontrato" HorizontalAlignment="Left" Height="23" Margin="119,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.347,1.434" IsEnabled="False"/>
                 <Label x:Name="label1" Content="Fecha Creacion" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top"/>
@@ -33,26 +33,26 @@
                 <Label x:Name="label2" Content="Evento" HorizontalAlignment="Left" Margin="414,25,0,0" VerticalAlignment="Top"/>
                 <Button x:Name="btn_grabar" Content="Guardar" HorizontalAlignment="Left" Margin="630,479,0,0" VerticalAlignment="Top" Width="104" Height="52" Click="btn_grabar_Click"/>
                 <Label x:Name="label4" Content="Rut Cliente" HorizontalAlignment="Left" Margin="392,112,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_rutc" HorizontalAlignment="Left" Height="23" Margin="476,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                <Button x:Name="button" Content="Buscar" HorizontalAlignment="Left" Margin="604,112,0,0" VerticalAlignment="Top" Width="75"/>
+                <TextBox x:Name="txt_rutc" HorizontalAlignment="Left" Height="23" Margin="476,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txt_rutc_TextChanged"/>
+                <Button x:Name="btn_validar" Content="Validar" HorizontalAlignment="Left" Margin="604,112,0,0" VerticalAlignment="Top" Width="75" Click="btn_validar_Click"/>
                 <TextBox x:Name="txt_total" HorizontalAlignment="Left" Height="23" Margin="476,434,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                 <Label x:Name="label7" Content="Valor total" HorizontalAlignment="Left" Margin="388,434,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label8" Content="Personas" HorizontalAlignment="Left" Margin="403,143,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label9" Content="" HorizontalAlignment="Left" Margin="405,219,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_cantp" HorizontalAlignment="Left" Height="23" Margin="476,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txt_cantp" HorizontalAlignment="Left" Height="23" Margin="476,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="txt_cantp_KeyDown"/>
                 <TextBox x:Name="txt_valorp" HorizontalAlignment="Left" Height="23" Margin="476,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                 <Label x:Name="label10" Content="Valor por cantidad" HorizontalAlignment="Left" Margin="353,188,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label11" Content="Valor por personal adicional" HorizontalAlignment="Left" Margin="302,275,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="txt_valora" HorizontalAlignment="Left" Height="23" Margin="476,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                 <Label x:Name="label12" Content="Personal adicional" HorizontalAlignment="Left" Margin="355,244,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_canta" HorizontalAlignment="Left" Height="23" Margin="476,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txt_canta" HorizontalAlignment="Left" Height="23" Margin="476,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="txt_canta_KeyDown"/>
                 <Button x:Name="btn_valorp" Content="Calcular valor" HorizontalAlignment="Left" Margin="604,185,0,0" VerticalAlignment="Top" Width="130" Click="btn_valorp_Click"/>
                 <Button x:Name="btn_total" Content="Calcular valor total" HorizontalAlignment="Left" Margin="600,431,0,0" VerticalAlignment="Top" Width="134" Click="btn_total_Click"/>
                 <Button x:Name="btn_adicional" Content="Calcular adicional" HorizontalAlignment="Left" Margin="604,272,0,0" VerticalAlignment="Top" Width="130" Click="btn_adicional_Click"/>
                 <Button x:Name="btn_valorizar" Content="Valorizar" HorizontalAlignment="Left" Margin="604,22,0,0" VerticalAlignment="Top" Width="75" Click="btn_valorizar_Click"/>
                 <TextBox x:Name="txt_vevento" HorizontalAlignment="Left" Height="23" Margin="470,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                 <Label x:Name="label13" Content="Precio evento" HorizontalAlignment="Left" Margin="378,56,0,0" VerticalAlignment="Top"/>
-                <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="1051,505,0,0" VerticalAlignment="Top" Width="98" Height="36" Click="btn_volver_Click"/>
+                <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="877,495,0,0" VerticalAlignment="Top" Width="98" Height="36" Click="btn_volver_Click"/>
                 <Label x:Name="label14" Content="Hora Fin" HorizontalAlignment="Left" Margin="54,188,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="txt_hrfin" HorizontalAlignment="Left" Height="23" Margin="123,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" KeyDown="txt_hrfin_KeyDown" TextChanged="txt_hrfin_TextChanged"/>
                 <Label x:Name="label15" Content=":" HorizontalAlignment="Left" Margin="161,143,0,0" VerticalAlignment="Top"/>
@@ -62,7 +62,7 @@
                 <Controls:Tile x:Name="btn_listarcon"   HorizontalAlignment="Left" Margin="291,28,0,0" VerticalAlignment="Top" Width="29" Height="26" Click="btn_listarcon_Click">
                     <Image Source="/Vistas;component/Iconos/Help.png"></Image>
                 </Controls:Tile>
-                
+
 
             </Grid>
         </GroupBox>
