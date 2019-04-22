@@ -289,17 +289,26 @@ namespace Vistas
                                     else
                                     {
                                         con._Rut = txt_rutc.Text;
-                                        bool resp = ccontrato.agregarContrato(con);
 
-                                        if (resp == true)
+                                        if (txt_total.Text == null && txt_total.Text.Equals(""))
                                         {
-                                            await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
-
+                                            await this.ShowMessageAsync("Error","Rellena todos los campos del evento");
                                         }
                                         else
                                         {
-                                            await this.ShowMessageAsync("Error", "Contrato ya existe");
+                                            bool resp = ccontrato.agregarContrato(con);
+
+                                            if (resp == true)
+                                            {
+                                                await this.ShowMessageAsync("Confirmar", "Contrato Agregado Correctamente");
+
+                                            }
+                                            else
+                                            {
+                                                await this.ShowMessageAsync("Error", "Contrato ya existe");
+                                            }
                                         }
+                                       
                                     }
                                     
 
@@ -424,6 +433,22 @@ namespace Vistas
         }
 
         private void txt_cantp_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txt_hrini2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txt_hrfin2_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
                 e.Handled = false;

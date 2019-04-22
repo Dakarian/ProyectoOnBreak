@@ -21,7 +21,7 @@ namespace Controlador
 
 
 
-        public Contrato buscarContrato(float ncontrato)
+        public Contrato buscarContrato(double ncontrato)
         {
 
             foreach (var item in contrato)

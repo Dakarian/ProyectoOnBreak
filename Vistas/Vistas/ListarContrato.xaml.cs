@@ -24,14 +24,16 @@ namespace Vistas
     /// </summary>
     public partial class ListarContrato : MetroWindow
     {
-        ColeccionContrato ccon = new ColeccionContrato();
-        ColeccionTipo ctipo = new ColeccionTipo();
-        Tipo tipos = new Tipo();
+        private ColeccionCliente ccli = new ColeccionCliente();
+        private ColeccionContrato ccontrato = new ColeccionContrato();
+        private ColeccionTipo ctipo = new ColeccionTipo();
+        Contrato con = new Contrato();
+        Tipo tip = new Tipo();
 
-            public ListarContrato()
+        public ListarContrato()
         {
             InitializeComponent();
-            dg_contrato.ItemsSource = ccon.Listar();
+            dg_contrato.ItemsSource = ccontrato.Listar();
         }
         //filtro por contrato
         private void txt_filtrocon_TextChanged(object sender, TextChangedEventArgs e)
@@ -41,12 +43,12 @@ namespace Vistas
             {
                 string numcontrato = txt_filtrocon.Text.ToLower();
                 string contratobuscado = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(numcontrato);
-                var posicion = this.ccon.Contrato.Where(r => r._NumeroContrato.ToString().Contains(contratobuscado)).ToList();
+                var posicion = this.ccontrato.Contrato.Where(r => r._NumeroContrato.ToString().Contains(contratobuscado)).ToList();
                 dg_contrato.ItemsSource = posicion;
             }
             else
             {
-                dg_contrato.ItemsSource = this.ccon.Contrato;
+                dg_contrato.ItemsSource = this.ccontrato.Contrato;
             }
 
 
@@ -80,13 +82,39 @@ namespace Vistas
 
         private void btn_actualizargrid_Click(object sender, RoutedEventArgs e)
         {
-            dg_contrato.ItemsSource = this.ccon.Contrato;
+            dg_contrato.ItemsSource = this.ccontrato.Contrato;
             dg_contrato.Items.Refresh();
         }
 
         private async void btn_vigencia_Click(object sender, RoutedEventArgs e)
         {
-            await this.ShowMessageAsync("Advertencia","¿Realmente desea quitar la vigencia del contrato?",MessageDialogStyle.AffirmativeAndNegative);
+          
+                    await this.ShowMessageAsync("Advertencia", "¿Realmente desea quitar la vigencia del contrato?", MessageDialogStyle.AffirmativeAndNegative);
+                    MessageDialogResult dr = new MessageDialogResult();
+                    if (dr == MessageDialogResult.Affirmative)
+                    {
+                            if (this.con._EstaVigente == true)
+                            {
+                                this.con._EstaVigente = false;
+                            }
+                        dg_contrato.ItemsSource = this.ccontrato.Contrato;
+                        dg_contrato.Items.Refresh();
+
+                        await this.ShowMessageAsync("Correcto", "Contrato inhabilitado");
+
+
+                    }
+                    else if (dr == MessageDialogResult.Negative)
+                    {
+                        await this.ShowMessageAsync("Fallo", "Cambios anulados");
+                    }
+                }
+
+               
+            }
+            
+            
+                
         }
-    }
-}
+    
+
