@@ -202,3 +202,5 @@ C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csp
 C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csproj.CopyComplete
 C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.exe
 C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Login.g.cs
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\Vistas\obj\Debug\Login.baml

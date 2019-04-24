@@ -36,3 +36,4 @@ C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\obj\Debug\
 C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csproj.CoreCompileInputs.cache
 C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
 C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+H:\Usuario\Escritorio\Duoc semestre 5\Desarrollo software escritorio y gestion\DEY semestral\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csprojResolveAssemblyReference.cache
