@@ -28,8 +28,8 @@ namespace Vistas
         public ListarCliente()
         {
             InitializeComponent();
-            dgridCliente.ItemsSource = Coleccion.Listar();
             ColeccionCliente coleccion = new ColeccionCliente();
+            dgridCliente.ItemsSource = coleccion.Listar();
         }
 
 
@@ -38,7 +38,7 @@ namespace Vistas
         {
             InitializeComponent();
             ColeccionCliente coleccion = new ColeccionCliente();
-            dgridCliente.ItemsSource = Coleccion.Listar();
+            dgridCliente.ItemsSource = coleccion.Listar();
             adm = vo;
         }
 
@@ -54,17 +54,7 @@ namespace Vistas
         //Boton actualizar la Grilla
         private void btn_Actualizar_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                dgridCliente.ItemsSource = this.coleccion.Clientes;
-                dgridCliente.Items.Refresh();
-            }
-            catch (Exception)
-            {
-
-                MessageBox.Show("No hay nada que actualizar");
-            }
-            //actualizarGrilla();
+            actualizarGrilla();
         }
 
         //Metodo para Buscar/Filtrar automaticamente rut
@@ -137,15 +127,23 @@ namespace Vistas
         {
             AdministrarCliente administrar = new AdministrarCliente();
             this.Close();
-            //administrar.ShowDialog();
         }
 
         //Metodo Traspasar Datos
-        private void btnTraspasar_Click(object sender, RoutedEventArgs e)
+        private async void btnTraspasar_Click(object sender, RoutedEventArgs e)
         {
-            Cliente cliente = (Cliente)dgridCliente.SelectedItem;
-            adm.txt_rut.Text = cliente._Rut;
-            adm.Buscar();
+            try
+            {
+                Cliente cliente = (Cliente)dgridCliente.SelectedItem;
+                adm.txt_rut.Text = cliente._Rut;
+                adm.Buscar();
+            }
+            catch (Exception ex)
+            {
+
+                await this.ShowMessageAsync("Error"," "+ex);
+            }
+
         }
 
         //Método Eliminar 

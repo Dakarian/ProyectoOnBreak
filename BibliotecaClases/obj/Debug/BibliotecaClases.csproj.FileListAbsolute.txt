@@ -30,3 +30,9 @@ C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\bin\Debu
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csprojAssemblyReference.cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.csproj.CoreCompileInputs.cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
