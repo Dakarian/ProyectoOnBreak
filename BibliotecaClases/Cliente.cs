@@ -20,16 +20,6 @@ namespace BibliotecaClases
             set
             {
                 Rut = value;
-                /*
-                if (value.Length <= 10)
-                {
-                    Rut = value;
-                }
-                else
-                {
-                    throw new ArgumentException("Rut invalido");
-                }
-                */
             }
         }
 

@@ -165,3 +165,40 @@ C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Vistas\obj\Debug\MainWind
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Vistas\obj\Debug\Vistas.g.resources
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Vistas\obj\Debug\Vistas.Properties.Resources.resources
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\Vistas.exe
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\Vistas.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\BibliotecaClases.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\Controlador.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\ControlzEx.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\MahApps.Metro.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\BibliotecaClases.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\Controlador.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\ControlzEx.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\MahApps.Metro.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\bin\Debug\MahApps.Metro.xml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Resources\Icons.baml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas\ListarContrato.g.cs
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas\ListarCliente.g.cs
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas\AdministrarContrato.g.cs
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas\AdministrarCliente.g.cs
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\MainWindow.g.cs
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\App.g.cs
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas_MarkupCompile.cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas_MarkupCompile.lref
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\App.baml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas\ListarContrato.baml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas\ListarCliente.baml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas\AdministrarContrato.baml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas\AdministrarCliente.baml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\MainWindow.baml
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.g.resources
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.exe
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Vistas\obj\Debug\Vistas.pdb

@@ -31,7 +31,6 @@ namespace Vistas
         private void btn_clientes_Click(object sender, RoutedEventArgs e)
         {
             AdministrarCliente ac = new AdministrarCliente();
-
             this.Hide();
             ac.Show();
         }
@@ -46,14 +45,14 @@ namespace Vistas
         private void btn_listarcli_Click(object sender, RoutedEventArgs e)
         {
             ListarCliente lc = new ListarCliente();
-            this.Hide();
+            lc.btnEliminar.IsEnabled = false;
+            lc.btnTraspasar.IsEnabled = false;
             lc.Show();
         }
 
         private void btn_listarcon_Click(object sender, RoutedEventArgs e)
         {
             ListarContrato lc = new ListarContrato();
-            this.Hide();
             lc.Show();
         }
     }

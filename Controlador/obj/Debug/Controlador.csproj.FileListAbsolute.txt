@@ -33,3 +33,12 @@ C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\bin\Debug\Bib
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\obj\Debug\Controlador.dll
 C:\Users\byron\Desktop\github proyecto\ProyectoOnBreak\Controlador\obj\Debug\Controlador.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\bin\Debug\Controlador.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\bin\Debug\Controlador.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\bin\Debug\BibliotecaClases.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\bin\Debug\BibliotecaClases.pdb
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csprojAssemblyReference.cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\obj\Debug\Controlador.dll
+C:\Users\Jeremiflin\Documents\GitHub\ProyectoOnBreak\Controlador\obj\Debug\Controlador.pdb
