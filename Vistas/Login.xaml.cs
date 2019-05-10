@@ -12,8 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
-using MahApps.Metro.Actions;
 
 namespace Vistas
 {
@@ -25,6 +25,23 @@ namespace Vistas
         public Login()
         {
             InitializeComponent();
+        }
+
+        private async void btn_inisesion_Click(object sender, RoutedEventArgs e)
+        {
+            if (txt_user.Text == "admin" && pw_pass.Password == "1234")
+            {
+                MainWindow mw = new MainWindow();
+                await this.ShowMessageAsync("Éxito", "Bienvenido a On Break");
+                this.Close();
+                mw.Show();
+            }
+            else
+            {
+                await this.ShowMessageAsync("Error", "Usuario y/o contraseña incorrectos");
+                txt_user.Focus();
+                pw_pass.Focus();
+            }
         }
     }
 }

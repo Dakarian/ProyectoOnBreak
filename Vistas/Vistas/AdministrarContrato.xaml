@@ -23,9 +23,9 @@
                 <Label x:Name="label1" Content="Fecha Creacion" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top"/>
                 <DatePicker x:Name="dp_creacion" HorizontalAlignment="Left" Margin="119,69,0,0" VerticalAlignment="Top" IsEnabled="False" Width="167"/>
                 <Label x:Name="label3" Content="Hora Inicio" HorizontalAlignment="Left" Margin="47,143,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_hrini" HorizontalAlignment="Left" Height="23" Margin="123,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" KeyDown="txt_hrini_KeyDown" TextChanged="txt_hrini_TextChanged"/>
+                <TextBox x:Name="txt_hrini" HorizontalAlignment="Left" Height="23" Margin="123,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" KeyDown="txt_hrini_KeyDown" TextChanged="txt_hrini_TextChanged" Controls:TextBoxHelper.Watermark="HH"/>
                 <Label x:Name="label5" Content="Direccion" HorizontalAlignment="Left" Margin="54,283,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_direccion" HorizontalAlignment="Left" Height="23" Margin="121,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                <TextBox x:Name="txt_direccion" HorizontalAlignment="Left" Height="23" Margin="121,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Controls:TextBoxHelper.Watermark="Ingrese una direccion"/>
                 <CheckBox x:Name="ckbox_vigente" Content="Vigente" HorizontalAlignment="Left" Margin="121,359,0,0" VerticalAlignment="Top" Width="134" IsChecked="True" IsEnabled="False"/>
                 <TextBox x:Name="txt_obs" HorizontalAlignment="Left" Height="119" Margin="121,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
                 <Label x:Name="label6" Content="Observaciones" HorizontalAlignment="Left" Margin="27,392,0,0" VerticalAlignment="Top"/>
@@ -33,7 +33,7 @@
                 <Label x:Name="label2" Content="Evento" HorizontalAlignment="Left" Margin="414,25,0,0" VerticalAlignment="Top"/>
                 <Button x:Name="btn_grabar" Content="Guardar" HorizontalAlignment="Left" Margin="630,479,0,0" VerticalAlignment="Top" Width="104" Height="52" Click="btn_grabar_Click"/>
                 <Label x:Name="label4" Content="Rut Cliente" HorizontalAlignment="Left" Margin="392,112,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_rutc" HorizontalAlignment="Left" Height="23" Margin="476,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txt_rutc_TextChanged"/>
+                <TextBox x:Name="txt_rutc" HorizontalAlignment="Left" Height="23" Margin="476,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txt_rutc_TextChanged" Controls:TextBoxHelper.Watermark="Ingrese rut"/>
                 <Button x:Name="btn_validar" Content="Validar" HorizontalAlignment="Left" Margin="604,112,0,0" VerticalAlignment="Top" Width="75" Click="btn_validar_Click"/>
                 <TextBox x:Name="txt_total" HorizontalAlignment="Left" Height="23" Margin="476,434,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
                 <Label x:Name="label7" Content="Valor total" HorizontalAlignment="Left" Margin="388,434,0,0" VerticalAlignment="Top"/>
@@ -54,11 +54,11 @@
                 <Label x:Name="label13" Content="Precio evento" HorizontalAlignment="Left" Margin="378,56,0,0" VerticalAlignment="Top"/>
                 <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="877,495,0,0" VerticalAlignment="Top" Width="98" Height="36" Click="btn_volver_Click"/>
                 <Label x:Name="label14" Content="Hora Fin" HorizontalAlignment="Left" Margin="54,188,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_hrfin" HorizontalAlignment="Left" Height="23" Margin="123,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" KeyDown="txt_hrfin_KeyDown" TextChanged="txt_hrfin_TextChanged"/>
+                <TextBox x:Name="txt_hrfin" HorizontalAlignment="Left" Height="23" Margin="123,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" KeyDown="txt_hrfin_KeyDown" TextChanged="txt_hrfin_TextChanged" Controls:TextBoxHelper.Watermark="HH"/>
                 <Label x:Name="label15" Content=":" HorizontalAlignment="Left" Margin="161,143,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label16" Content=":" HorizontalAlignment="Left" Margin="161,188,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txt_hrini2" HorizontalAlignment="Left" Height="23" Margin="179,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" TextChanged="txt_hrini2_TextChanged" KeyDown="txt_hrini2_KeyDown"/>
-                <TextBox x:Name="txt_hrfin2" HorizontalAlignment="Left" Height="23" Margin="179,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" TextChanged="txt_hrfin2_TextChanged" KeyDown="txt_hrfin2_KeyDown"/>
+                <TextBox x:Name="txt_hrini2" HorizontalAlignment="Left" Height="23" Margin="179,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" TextChanged="txt_hrini2_TextChanged" KeyDown="txt_hrini2_KeyDown" Controls:TextBoxHelper.Watermark="MM" />
+                <TextBox x:Name="txt_hrfin2" HorizontalAlignment="Left" Height="23" Margin="179,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" TextChanged="txt_hrfin2_TextChanged" KeyDown="txt_hrfin2_KeyDown" Controls:TextBoxHelper.Watermark="MM"/>
                 <Controls:Tile x:Name="btn_listarcon"   HorizontalAlignment="Left" Margin="291,28,0,0" VerticalAlignment="Top" Width="29" Height="26" Click="btn_listarcon_Click">
                     <Image Source="/Vistas;component/Iconos/Help.png"></Image>
                 </Controls:Tile>

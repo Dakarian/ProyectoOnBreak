@@ -4,15 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         
-             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-     xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
-     xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        
+          xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+          xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+          xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         
         xmlns:local="clr-namespace:Vistas"
         mc:Ignorable="d"
-        Title="Login" Height="300" Width="300">
+        Title="Login" Height="327" Width="324" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid HorizontalAlignment="Left" Height="250" Margin="36,30,0,0" VerticalAlignment="Top" Width="272">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="150" Source="Iconos/Logo Duoc UC Escuela IT.jpg"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="76" Margin="93,38,0,0" VerticalAlignment="Top" Width="79" Source="Iconos/logo_white_background.jpg" Stretch="Fill"/>
+            <TextBox x:Name="txt_user" HorizontalAlignment="Left" Height="23" Margin="75,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Controls:TextBoxHelper.Watermark="Ingrese usuario" MaxLength="10"/>
+            <PasswordBox x:Name="pw_pass" Controls:PasswordBoxHelper.CapsLockWarningToolTip="MAYUSC activado" Controls:TextBoxHelper.Watermark="Ingrese contraseña" MaxLength="10" Margin="75,164,77,60" />
+            <Label x:Name="label" Content="Usuario:" HorizontalAlignment="Left" Margin="12,132,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1" Content="Contraseña:" HorizontalAlignment="Left" Margin="-7,163,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="btn_inisesion" Content="Iniciar sesión" HorizontalAlignment="Left" Margin="75,201,0,0" VerticalAlignment="Top" Width="120" Click="btn_inisesion_Click"/>
+        </Grid>
+
+
     </Grid>
+
 </Controls:MetroWindow>
