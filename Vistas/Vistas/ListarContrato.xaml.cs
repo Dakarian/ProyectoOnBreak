@@ -38,7 +38,7 @@ namespace Vistas
         //filtro por contrato
         private void txt_filtrocon_TextChanged(object sender, TextChangedEventArgs e)
         {
-           
+
             if (txt_filtrocon.Text.Length > 0)
             {
                 string numcontrato = txt_filtrocon.Text.ToLower();
@@ -52,7 +52,7 @@ namespace Vistas
             }
 
 
-        
+
         }
 
         private void btn_volver_Click(object sender, RoutedEventArgs e)
@@ -60,13 +60,13 @@ namespace Vistas
             MainWindow mw = new MainWindow();
             this.Close();
             mw.Show();
-            
+
         }
 
         private void txt_filtroev_TextChanged(object sender, TextChangedEventArgs e)
         {
 
- 
+
             if (txt_filtroev.Text.Length > 0)
             {
                 string nombre = txt_filtroev.Text.ToLower();
@@ -88,33 +88,29 @@ namespace Vistas
 
         private async void btn_vigencia_Click(object sender, RoutedEventArgs e)
         {
-          
-                    await this.ShowMessageAsync("Advertencia", "¿Realmente desea quitar la vigencia del contrato?", MessageDialogStyle.AffirmativeAndNegative);
-                    MessageDialogResult dr = new MessageDialogResult();
-                    if (dr == MessageDialogResult.Affirmative)
-                    {
-                            if (this.con._EstaVigente == true)
-                            {
-                                this.con._EstaVigente = false;
-                            }
-                        dg_contrato.ItemsSource = this.ccontrato.Contrato;
-                        dg_contrato.Items.Refresh();
-
-                        await this.ShowMessageAsync("Correcto", "Contrato inhabilitado");
 
 
-                    }
-                    else if (dr == MessageDialogResult.Negative)
-                    {
-                        await this.ShowMessageAsync("Fallo", "Cambios anulados");
-                    }
-                }
+            try
+            {
+                Contrato con = (Contrato)dg_contrato.SelectedItem;
+                con._EstaVigente = false;
+                await this.ShowMessageAsync("Invalidado", "la vigencia se ha anulado");
 
-               
+
             }
-            
-            
-                
+            catch (Exception)
+            {
+
+            }
+
+
         }
+
+
+    }
+
+
+
+}
     
 

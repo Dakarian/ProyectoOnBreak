@@ -79,10 +79,10 @@ namespace Vistas
                     cli._Actividad = (Actividad)cbo_actividad.SelectedIndex;
                     cli._Tipo = (Empresa)cbo_empresa.SelectedIndex;
                     */
-                    if (resp==true)
+                    if (resp == true)
                     {
                         await this.ShowMessageAsync("Correcto", "Cliente Agregado");
-                        
+
                     }
                     else
                     {
@@ -222,7 +222,7 @@ namespace Vistas
             try
             {
                 //Se manda el Listado a la otra ventana
-                ListarCliente listar = new ListarCliente();
+                ListarCliente listar = new ListarCliente(this);
                 listar.Coleccion = this.coleccion;
                 listar.btnEliminar.IsEnabled = true;
                 listar.btnTraspasar.IsEnabled = true;
@@ -297,7 +297,7 @@ namespace Vistas
                 Cliente cli = coleccion.buscarRut(rut);
                 MessageBoxResult respuesta =
                 MessageBox.Show(
-                   "¿Desea Modificar Cliente: "+cli._Rut+" ?",
+                   "¿Desea Modificar Cliente: " + cli._Rut + " ?",
                    "Modificar",
                    MessageBoxButton.YesNo,
                    MessageBoxImage.Warning);
@@ -306,9 +306,9 @@ namespace Vistas
                     Modificar();
                     await this.ShowMessageAsync("Correcto", "Cliente Modificado");
                 }
-                else 
+                else
                 {
-                        await this.ShowMessageAsync("Cancelado", "No se han realizado cambios");      
+                    await this.ShowMessageAsync("Cancelado", "No se han realizado cambios");
                 }
                 /*if (this.coleccion.agregarCliente(cli))
                 {
@@ -325,7 +325,8 @@ namespace Vistas
 
         }
 
-        public  void Modificar()
+        //método modificar
+        public void Modificar()
         {
             string rut = txt_rut.Text;
             Cliente cli = coleccion.buscarRut(rut);

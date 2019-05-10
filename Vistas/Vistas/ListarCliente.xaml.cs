@@ -136,12 +136,20 @@ namespace Vistas
             {
                 Cliente cliente = (Cliente)dgridCliente.SelectedItem;
                 adm.txt_rut.Text = cliente._Rut;
-                adm.Buscar();
+                adm.txt_nom.Text = cliente._NombreContacto;
+                adm.txt_razon.Text = cliente._RazonSocial;
+                adm.txt_email.Text = cliente._MailContacto;
+                adm.txt_direccion.Text = cliente._Direccion;
+                adm.txt_telefono.Text = "" + (cliente._Telefono);
+                adm.cbo_actividad.SelectedItem = cliente._Actividad;
+                adm.cbo_empresa.SelectedItem = cliente._Tipo;
+
+
             }
             catch (Exception ex)
             {
 
-                await this.ShowMessageAsync("Error"," "+ex);
+                await this.ShowMessageAsync("Error", " " + ex);
             }
 
         }
